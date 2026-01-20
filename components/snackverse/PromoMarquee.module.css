@@ -1,0 +1,165 @@
+.promoRoot {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+  overflow: visible;
+  margin-top: -1rem; /* -mt-4 from reference */
+}
+
+/* Lime band (sale) - should be on top with z-10 from reference */
+.promoRootSale {
+  z-index: 10;
+}
+
+/* Purple band (stats) - should be below */
+.promoRootStats {
+  z-index: 9;
+}
+
+@media (min-width: 768px) {
+  .promoRoot {
+    margin-top: -1.5rem; /* md:-mt-6 from reference */
+  }
+}
+
+/* Base rotation angle - green band: +2deg (rotate-2 from reference) */
+.promoRotate {
+  transform: rotate(2deg);
+  transform-origin: center;
+  overflow: visible;
+}
+
+/* Purple band: -1deg (-rotate-1 from reference) */
+.promoRotateReverse {
+  transform: rotate(-1deg);
+}
+
+.promoBand {
+  position: relative;
+  background: #d4ed5e; /* exact lime from reference bg-lime */
+  width: 110%;
+  margin-left: -5%;
+  padding: 1rem 0; /* py-4 from reference = 1rem top/bottom */
+}
+
+.promoBandPurple {
+  background: #c8b2ff; /* exact light purple from reference bg-lightpurple */
+}
+
+.promoViewport {
+  overflow: hidden; /* ONLY this clips */
+  min-height: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 2.5rem; /* px-10 from reference */
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .promoViewport {
+    padding-left: 0; /* lg:px-0 from reference */
+    padding-right: 0;
+  }
+}
+
+.promoTrack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+  align-items: center;
+  gap: 2.5rem; /* gap-x-10 from reference = 2.5rem */
+  white-space: nowrap;
+  will-change: transform;
+  animation: promo-marquee 22s linear infinite;
+  justify-content: center; /* text-center from reference */
+}
+
+.promoTrackReverse {
+  animation: promo-marquee-reverse 22s linear infinite;
+}
+
+.promoItem {
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  font-weight: 700; /* font-bold from reference */
+  letter-spacing: normal;
+  font-size: 25px; /* md:text-25 from reference */
+  line-height: normal;
+  color: #4b4354; /* text-black from reference */
+  padding-inline: 0;
+  white-space: nowrap;
+}
+
+.promoItem a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.promoItem a:hover {
+  text-decoration: underline;
+}
+
+.promoItemWhite {
+  color: #ffffff;
+}
+
+/* Keyframes - scrolls left (negative translateX) */
+@keyframes promo-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Reverse keyframes - scrolls right (positive translateX) */
+@keyframes promo-marquee-reverse {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .promoTrack,
+  .promoTrackReverse {
+    animation: none;
+  }
+}
+
+/* Responsive font sizes matching reference */
+@media (min-width: 768px) {
+  .promoItem {
+    font-size: 25px; /* md:text-25 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .promoItem {
+    font-size: 20px; /* lg:text-20 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .promoItem {
+    font-size: 25px; /* xl:text-25 */
+  }
+}
+
+/* Mobile - match reference responsive behavior */
+@media (max-width: 1023px) {
+  .promoTrack {
+    flex-wrap: wrap; /* flex-wrap from reference on mobile */
+  }
+}
+  

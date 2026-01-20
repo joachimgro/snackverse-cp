@@ -1,0 +1,46 @@
+/**
+    * Hide WooCommerce menu for customerservice role
+*/
+.role-customerservice:not(.role-administrator) #toplevel_page_woocommerce {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #toplevel_page_vc-welcome {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #toplevel_page_ai1ic_settings_page {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #menu-posts-product {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #menu-dashboard {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #wp-admin-bar-comments {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) #wp-admin-bar-new-content {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) .con-pro-message {
+    display: none !important;
+}
+.role-customerservice:not(.role-administrator) .toplevel_page_jetpack {
+    display: none !important;
+}
+.role-customerservice.post-type-shop_order:not(.role-administrator) h1+a {
+    display: none !important;
+}
+.role-customerservice.post-type-shop_subscription:not(.role-administrator) h1+a {
+    display: none !important;
+}
+/* .role-customerservice:not(.role-administrator) .wc-customer-user label a+a {
+    display: none !important;
+} */
+/* .role-customerservice:not(.role-administrator) .wc-customer-user label a+a {
+    display: block !important;
+} */
+
+span.update-plugins:not(:first-child) {
+    display: none !important;
+}

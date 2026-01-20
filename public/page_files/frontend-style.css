@@ -1,0 +1,289 @@
+/* Subscription View Frontend Styling */
+
+.sv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sv-page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.sv-search-box {
+    margin-bottom: 20px;
+}
+
+
+.sv-search-box input[type="text"] {
+    width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.sv-search-form {
+    display: flex;  
+    gap: 10px;
+}
+.sv-search-button {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sv-search-button:hover {
+    background-color: #005f8b;
+}
+
+.sv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sv-table th,
+.sv-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.sv-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.sv-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sv-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.sv-status-active {
+    background-color: #7ad03a;
+}
+
+.sv-status-on-hold {
+    background-color: #f8dda7;
+    color: #94660c;
+}
+
+.sv-status-cancelled {
+    background-color: #e5e5e5;
+    color: #777;
+}
+
+.sv-status-expired {
+    background-color: #e5e5e5;
+    color: #777;
+}
+
+.sv-status-pending {
+    background-color: #f8dda7;
+    color: #94660c;
+}
+
+.sv-status-completed {
+    background-color: #c8d7e1;
+    color: #2e4453;
+}
+
+.sv-status-processing {
+    background-color: #c6e1c6;
+    color: #5b841b;
+}
+
+.sv-view-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sv-view-button:hover {
+    background-color: #005f8b;
+}
+
+.sv-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sv-pagination .page-numbers {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.sv-pagination .current {
+    background-color: #0073aa;
+    color: white;
+    border-color: #0073aa;
+}
+
+/* Subscription detail styles */
+.sv-back-link {
+    margin-bottom: 20px;
+}
+
+.sv-back-link a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.sv-detail-section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.sv-detail-section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.sv-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.sv-info-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+.sv-info-label {
+    font-weight: bold;
+}
+
+.sv-variation-data {
+    margin: 5px 0 0 15px;
+    font-size: 14px;
+}
+
+.sv-variation-data dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    font-weight: bold;
+}
+
+.sv-variation-data dd {
+    margin-left: 110px;
+}
+
+.sv-totals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sv-totals-table th {
+    text-align: left;
+    width: 150px;
+    padding: 8px 0;
+}
+
+.sv-totals-table td {
+    text-align: right;
+    padding: 8px 0;
+}
+
+.sv-notes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sv-note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.sv-note-content {
+    margin-bottom: 5px;
+}
+
+.sv-note-meta {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sv-info-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .sv-search-box input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .sv-table, 
+    .sv-table thead, 
+    .sv-table tbody, 
+    .sv-table th, 
+    .sv-table td, 
+    .sv-table tr {
+        display: block;
+    }
+    
+    .sv-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .sv-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+    
+    .sv-table td {
+        border: none;
+        position: relative;
+        padding-left: 40%;
+        text-align: left;
+    }
+    
+    .sv-table td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 35%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    
+    /* Add labels for mobile view */
+    .sv-table td:nth-of-type(1):before { content: "ID"; }
+    .sv-table td:nth-of-type(2):before { content: "Customer"; }
+    .sv-table td:nth-of-type(3):before { content: "Status"; }
+    .sv-table td:nth-of-type(4):before { content: "Next Payment"; }
+    .sv-table td:nth-of-type(5):before { content: "Total"; }
+    .sv-table td:nth-of-type(6):before { content: "Actions"; }
+}

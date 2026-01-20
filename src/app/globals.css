@@ -1,26 +1,195 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Floating/Bobbing animations for snack images */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-1.5deg);
+  }
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply floating animations to snack images */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.animate-float-fast {
+  animation: floatFast 2.5s ease-in-out infinite;
+}
+
+.animate-bob {
+  animation: bob 2s ease-in-out infinite;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-fast,
+  .animate-bob {
+    animation: none;
+  }
+}
+
+/* Promo Marquee (Next clone) */
+.promoRoot {
+  position: relative;
+  width: 100%;
+  z-index: 30;
+  isolation: isolate;
+}
+
+.promoRotate {
+  transform: rotate(2deg);
+  transform-origin: center;
+  overflow: visible; /* important */
+}
+
+.promoRotateReverse {
+  transform: rotate(-1deg);
+}
+
+.promoBand {
+  position: relative;
+  background: #d8ea59; /* lime-ish */
+  width: 110%;
+  margin-left: -5%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.promoBandPurple {
+  background: #c8b2ff; /* light purple */
+}
+
+.promoViewport {
+  overflow: hidden; /* ONLY this should clip */
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.promoTrack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+  white-space: nowrap;
+  will-change: transform;
+  animation: promo-marquee 22s linear infinite;
+}
+
+.promoTrackReverse {
+  animation: promo-marquee-reverse 22s linear infinite;
+}
+
+.promoItem {
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  line-height: 1;
+  color: #4b4354;
+  padding-inline: 24px;
+  white-space: nowrap;
+}
+
+.promoItemWhite {
+  color: #ffffff;
+}
+
+.promoItem a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Keyframes */
+@keyframes promo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes promo-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .promoTrack {
+    animation: none;
+  }
+  .promoTrackReverse {
+    animation: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .promoViewport {
+    height: 44px;
+  }
+  .promoItem {
+    font-size: 16px;
+  }
+}
+
+/* Custom background colors for promo bars */
+.bg-lime {
+  background-color: #d4ed5e; /* Lime green */
+}
+
+.bg-lightpurple {
+  background-color: #c8b2ff; /* Light purple */
 }

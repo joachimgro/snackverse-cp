@@ -1,0 +1,160 @@
+#mce-EMAIL{
+    padding: 1.75rem 2.5rem !important;
+    width: 100%;
+    text-align: left;
+    font-size: 1em !important;
+    border-radius: 99em  !important;
+    border-width: 1px !important;
+    font-family: "Readex Pro", sans-serif !important;
+    max-width: 361px !important;
+}
+#mce-EMAIL:focus{
+    border-color: rgb(255, 140, 35) !important;
+}
+
+#mc-embedded-subscribe {
+    line-height: 36px;
+    border-radius: 99em !important;
+    font-size: 20px !important;
+    background-color: rgba(255,140,35,1) !important;
+    text-transform: none !important;
+    padding: 0.8rem 2rem !important;
+}
+#mc-embedded-subscribe:hover{
+    background-color: rgba(238,56,27,1) !important;
+}
+
+
+.text-white,.\!text-white {
+    color: #fff !important;
+}
+
+.\!text-white *{
+    color: #fff;
+}
+
+.hover\:bg-darkorange:hover {
+    background-color: rgba(238,56,27,var(--tw-bg-opacity)) !important;
+}
+.text-purple {
+    color: rgba(151,20,255,1) !important;
+}
+
+.hover\:text-white:hover {
+    color: rgba(255,255,255,1) !important;
+}
+.hover\:bg-purple:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(151,20,255,var(--tw-bg-opacity)) !important;
+}
+
+a:hover {
+    opacity: 1 !important;
+}
+.text-black {
+    color: rgba(75,67,84,1) !important;
+}
+.text-black p,.text-black span,.text-black a {
+    color: rgba(75,67,84,1) ;
+}
+
+
+.text-black {
+    color: rgba(75,67,84,1) !important;
+}
+.text-black>p,.text-black>span,.text-black>a,.text-black h2 ,.text-black h4,.text-black>div {
+    color: rgba(75,67,84,1) !important;
+}
+
+.text-trustpilot,span.text-trustpilot {
+    color: #00b67a !important;
+}
+
+footer a{
+    color:#fff !important;
+}
+footer a:hover{
+    color:#fff;
+}
+
+footer {
+    z-index: 0 !important;
+}
+
+
+.text-purpletext {
+    color: rgba(94,65,118,var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-orange:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255,140,35,var(--tw-text-opacity)) !important;
+}
+a,a:focus, a:hover {
+    transition-duration: 0.1s !important;
+    transition-delay: 0s !important;
+    transition:none !important;
+}
+
+.mailchimp-text{
+    font-size: 16px !important;
+}
+.px-10 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+.border-grey {
+    border-color: rgba(235,230,240,1) !important;
+}
+
+@media (min-width: 768px){
+.md\:px-16 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+}
+@media screen and (min-width: 1024px) {
+    
+    
+    .mailchimp-text{
+        font-size: 16px !important;
+    }
+    #mce-EMAIL{
+        border-radius: 99em 0 0 99em  !important;
+        line-height: 36px !important;
+        font-size:24px !important;
+        height: 70px !important;
+        margin-right: 0 !important;
+        /* padding: 0 0 0 2.25em !important; */
+        border-right:0 !important
+    }
+    
+    #mc-embedded-subscribe {
+        line-height: 31px;
+        border-radius: 0 99em 99em 0 !important;
+        font-size: 24px !important;
+        min-width: 200px !important;
+        background-color: rgba(255,140,35,1) !important;
+        text-transform: none !important;
+        padding: 0.75rem .5rem  !important;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .xl\:px-32 {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+    }
+    .xl\:justify-between {
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+    }
+}
+@media (min-width: 1600px){
+.\32xl\:max-w-xl {
+    max-width: 1320px !important;
+}
+}
+
+
