@@ -26,10 +26,10 @@ export const ANIMATION_CONFIG = {
 
   // Scroll animation settings
   scroll: {
-    // IntersectionObserver threshold
-    threshold: 0.1,
-    // Root margin for triggering animations
-    rootMargin: "0px 0px -50px 0px",
+    // Portion of element visible before triggering
+    amount: 0.1,
+    // Margin around the root for early trigger
+    margin: "0px 0px -50px 0px",
   },
 
   // Parallax settings
