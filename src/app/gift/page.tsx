@@ -1,0 +1,52 @@
+import Header from "@components/snackverse/Header";
+import Footer from "@components/snackverse/Footer";
+import SubscriptionBox from "@components/snackverse/SubscriptionBox";
+import { boxes } from "./data";
+
+export default function GiftPage() {
+  return (
+    <main
+      className="flex flex-col flex-1 overflow-x-hidden"
+      style={{ minHeight: "100vh" }}
+    >
+      {/* Header */}
+      <div
+        className="bg-purple relative z-40"
+        style={{ backgroundColor: "#4D008A" }}
+      >
+        <Header />
+      </div>
+
+      {/* Gift boxes section – same layout as subscribe */}
+      <section className="block overflow-hidden flex-1">
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .bg {
+                background-image: url('https://staging.snackverse.com/wp-content/themes/shopkeeper/images/bang_bg.png');
+                background-color: #560299;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              @media only screen and (max-width: 1025px) {
+                .bg { background-size: auto 300%; }
+              }
+            `,
+          }}
+        />
+        <div className="bg overflow-hidden relative">
+          <div className="flex flex-col flex-wrap md:flex-row mx-auto max-w-90 md:max-w-md md:px-6 lg:px-0 lg:max-w-xl w-full lg:gap-x-4 relative mt-6 lg:mt-0">
+            <div className="fade-trigger flex flex-col-reverse flex-wrap lg:flex-row mx-auto max-w-full lg:max-w-xl w-full lg:flex-wrap lg:flex-row relative md:justify-center md:items-center lg:items-start gap-y-4 md:gap-y-14 flex-wrap">
+              {boxes.map((box) => (
+                <SubscriptionBox key={box.sku} box={box} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}

@@ -1,9 +1,10 @@
 // app/layout.tsx
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SnackVerse (clone)",
-  description: "1:1 reference render using imported WP assets",
+  description: "Snackverse",
 };
 
 export default function RootLayout({
@@ -130,19 +131,38 @@ export default function RootLayout({
         <link rel="stylesheet" href="/page_files/misc.min.css" media="all" />
         <link rel="stylesheet" href="/page_files/app-104440439d.css" media="all" />
 
-        {/* These preload fonts are still pointing to snackverse.com — fine for reference,
-           but for a proper clone you should download and self-host them later. */}
+        {/* Self-hosted fonts: preload + @font-face (inline so paths stay /fonts/ and are not rewritten) */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              @font-face {
+                font-family: Academicons;
+                src: url("/fonts/academicons.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+                font-display: block;
+              }
+              @font-face {
+                font-family: "FontAwesome";
+                src: url("/fonts/fontawesome-webfont.woff2") format("woff2");
+                font-weight: normal;
+                font-style: normal;
+                font-display: block;
+              }
+            `,
+          }}
+        />
         <link
           rel="preload"
           as="font"
-          href="https://snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff2?v=1.9.2"
-          type="font/woff2"
+          href="/fonts/academicons.woff"
+          type="font/woff"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
           as="font"
-          href="https://snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0"
+          href="/fonts/fontawesome-webfont.woff2"
           type="font/woff2"
           crossOrigin="anonymous"
         />

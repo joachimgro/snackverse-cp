@@ -1,0 +1,22 @@
+{
+  // Project name for Cloudflare Pages
+  "name": "snackverse-cp",
+  
+  // Compatibility date for Cloudflare Workers runtime
+  "compatibility_date": "2026-02-09",
+  
+  // Pages configuration
+  "pages_build_output_dir": ".vercel/output/static",
+  
+  // Node.js compatibility for Next.js
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  
+  // Environment variables (add as needed)
+  "vars": {
+    // "API_URL": "https://api.example.com"
+  },
+  
+
+}

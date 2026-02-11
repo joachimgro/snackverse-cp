@@ -4,8 +4,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SnackVerse (clone)",
-  description: "1:1 reference render using imported WP assets",
+  title: "SnackVerse",
+  description: "Snackverse",
 };
 
 export default function SnackverseLayout({
