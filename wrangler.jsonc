@@ -8,12 +8,6 @@
   // Pages configuration
   "pages_build_output_dir": "out",
   
-  // Node.js compatibility for Next.js
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-      "main": "src/app/page.tsx",
-  
   // Environment variables (add as needed)
   "vars": {
     // "API_URL": "https://api.example.com"
