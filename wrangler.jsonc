@@ -12,6 +12,7 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
+      "main": "src/app/page.tsx",
   
   // Environment variables (add as needed)
   "vars": {
