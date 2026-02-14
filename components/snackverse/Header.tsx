@@ -4,8 +4,8 @@ export default function Header() {
       <div className="flex flex-row justify-between mx-auto max-w-90 md:max-w-95 xl:px-6 xl:max-w-xl items-center w-full py-4">
         <a href="/">
           <picture>
-            <source media="(min-width: 300px)" srcSet="/wp-content/themes/shopkeeper/images/logo.webp" type="image/webp" />
-            <img src="/page_files/logo.png" className="logo max-w-80 md:max-w-200" alt="Picture" />
+            <source media="(min-width: 300px)" srcSet="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/logo.webp" type="image/webp" />
+            <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/logo.webp" className="logo max-w-80 md:max-w-200" alt="Snackverse Logo" />
           </picture>
         </a>
 

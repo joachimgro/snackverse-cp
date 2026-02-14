@@ -1,7 +1,7 @@
 import type { SubscriptionBoxData } from "@/app/subscribe/data";
 
 const IMG =
-  "https://staging.snackverse.com/wp-content/themes/shopkeeper/images";
+  "/wp-content/themes/shopkeeper/images";
 
 interface SubscriptionBoxProps {
   box: SubscriptionBoxData;

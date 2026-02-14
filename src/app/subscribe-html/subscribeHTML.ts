@@ -4,19 +4,19 @@ export const subscribeHtml = `
 
 <head>
     <link rel='stylesheet' id='engine-css'
-        href='https://staging.snackverse.com/wp-content/themes/shopkeeper/dist/assets/css/app-f30f2585d9.css'
+        href='/wp-content/themes/shopkeeper/dist/assets/css/app-f30f2585d9.css'
         type='text/css' media='all' />
     <link rel='preload' as='font' id='wpzoom-social-icons-font-academicons-woff2-css'
-        href='https://staging.snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff2?v=1.9.2'
+        href='/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff2?v=1.9.2'
         type='font/woff2' crossorigin />
     <link rel='preload' as='font' id='wpzoom-social-icons-font-fontawesome-3-woff2-css'
-        href='https://staging.snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'
+        href='/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'
         type='font/woff2' crossorigin />
     <link rel='preload' as='font' id='wpzoom-social-icons-font-genericons-woff-css'
-        href='https://staging.snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'
+        href='/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'
         type='font/woff' crossorigin />
     <link rel='preload' as='font' id='wpzoom-social-icons-font-socicon-woff2-css'
-        href='https://staging.snackverse.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff2?v=4.2.14'
+        href='/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff2?v=4.2.14'
         type='font/woff2' crossorigin />
     <link rel='stylesheet' id='font-awesome-official-v4shim-css'
         href='https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css' type='text/css' media='all'
@@ -24,49 +24,49 @@ export const subscribeHtml = `
     
     <script type="text/template"
         id="tmpl-unavailable-variation-template"><p role="alert">Sorry, this product is unavailable. Please choose a different combination.</p></script>
-    <script type="text/javascript" src="https://staging.snackverse.com/wp-includes/js/jquery/jquery.min.js"
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js"
         id="jquery-core-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/da954e522ecdc9652ba4d9ca582193f2.js?ver=193f2"
+        src="/wp-content/litespeed/js/da954e522ecdc9652ba4d9ca582193f2.js?ver=193f2"
         id="jquery-migrate-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/d6a316de24869b34a2a9d7973a9cfc80.js?ver=cfc80"
+        src="/wp-content/litespeed/js/d6a316de24869b34a2a9d7973a9cfc80.js?ver=cfc80"
         id="gbt_18_sk_slider_script-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/782b839a5b11c8b973cca4b10f160cd8.js?ver=60cd8"
+        src="/wp-content/litespeed/js/782b839a5b11c8b973cca4b10f160cd8.js?ver=60cd8"
         id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript" id="wc-add-to-cart-js-extra">/*  */
         var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View basket", "cart_url": "https:\/\/staging.snackverse.com\/checkout\/", "is_cart": "", "cart_redirect_after_add": "no" };
         /*  */</script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/5e744c8ad73eff98152a13cb2634173d.js?ver=4173d"
+        src="/wp-content/litespeed/js/5e744c8ad73eff98152a13cb2634173d.js?ver=4173d"
         id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/45de1a29174020ad9ddb92b86d6c165f.js?ver=c165f"
+        src="/wp-content/litespeed/js/45de1a29174020ad9ddb92b86d6c165f.js?ver=c165f"
         id="wc-js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript" id="woocommerce-js-extra">/*  */
         var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_password_show": "Show password", "i18n_password_hide": "Hide password" };
         /*  */</script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/9d23429c23510acbe56d8c989c94c514.js?ver=4c514"
+        src="/wp-content/litespeed/js/9d23429c23510acbe56d8c989c94c514.js?ver=4c514"
         id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js"
+        src="/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js"
         id="gtm4wp-woocommerce-enhanced-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/e740bb8d4b4d3161bffcb2360864fb78.js?ver=4fb78"
+        src="/wp-content/litespeed/js/e740bb8d4b4d3161bffcb2360864fb78.js?ver=4fb78"
         id="underscore-js"></script>
     <script type="text/javascript" id="wp-util-js-extra">/*  */
         var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
         /*  */</script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/af5e0792f7b1bbd3f4b9dfa0c25b8f5d.js?ver=b8f5d"
+        src="/wp-content/litespeed/js/af5e0792f7b1bbd3f4b9dfa0c25b8f5d.js?ver=b8f5d"
         id="wp-util-js"></script>
     <script type="text/javascript" id="wc-add-to-cart-variation-js-extra">/*  */
         var wc_add_to_cart_variation_params = { "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.", "i18n_make_a_selection_text": "Please select some product options before adding this product to your basket.", "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination.", "i18n_reset_alert_text": "Your selection has been reset. Please select some product options before adding this product to your cart." };
         /*  */</script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/d4e10958c0a093a429214589dbde7683.js?ver=e7683"
+        src="/wp-content/litespeed/js/d4e10958c0a093a429214589dbde7683.js?ver=e7683"
         id="wc-add-to-cart-variation-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js?ver=1"
@@ -75,10 +75,10 @@ export const subscribeHtml = `
         var enr_frontend_params = { "ajax_url": "https:\/\/staging.snackverse.com\/wp-admin\/admin-ajax.php", "is_switch_request": "", "subscribe_now_nonce": "7ef1f84af6", "subscribe_now_button_text": "Sign up now", "single_add_to_cart_text": "Add to cart", "hide_variable_limited_notice": "" };
         /*  */</script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/47d6568f132bee4deadebe16666204b6.js?ver=204b6"
+        src="/wp-content/litespeed/js/47d6568f132bee4deadebe16666204b6.js?ver=204b6"
         id="enr-frontend-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/4af5f516ac71a12462decee9b1673ca4.js?ver=73ca4"
+        src="/wp-content/litespeed/js/4af5f516ac71a12462decee9b1673ca4.js?ver=73ca4"
         id="wc-select2-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript" id="wc-settings-dep-in-header-js-after">/*  */
         console.warn("Scripts that have a dependency on [wc-settings, wc-blocks-checkout] must be loaded in the footer, automatewoo-marketing-optin-editor-script was registered to load in the header, but has been switched to load in the footer instead. See https://github.com/woocommerce/woocommerce-gutenberg-products-block/pull/5059");
@@ -94,15 +94,15 @@ export const subscribeHtml = `
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         id="slick-js"></script>
     <script data-optimized="1" type="text/javascript"
-        src="https://staging.snackverse.com/wp-content/litespeed/js/447277c1bbee59282cbc75606f109320.js?ver=09320"
+        src="/wp-content/litespeed/js/447277c1bbee59282cbc75606f109320.js?ver=09320"
         id="scripts-js"></script>
-    <link rel="https://api.w.org/" href="https://staging.snackverse.com/wp-json/" />
+    <link rel="https://api.w.org/" href="/wp-json/" />
     <link rel="alternate" title="JSON" type="application/json"
-        href="https://staging.snackverse.com/wp-json/wp/v2/pages/8613" />
+        href="/wp-json/wp/v2/pages/8613" />
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-        href="https://staging.snackverse.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstaging.snackverse.com%2Fsubscribe%2F" />
+        href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstaging.snackverse.com%2Fsubscribe%2F" />
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-        href="https://staging.snackverse.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstaging.snackverse.com%2Fsubscribe%2F&#038;format=xml" />
+        href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstaging.snackverse.com%2Fsubscribe%2F&#038;format=xml" />
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -149,14 +149,14 @@ export const subscribeHtml = `
             });
         }, false);</script>
     <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
-    <link rel="icon" href="https://staging.snackverse.com/wp-content/uploads/2022/10/cropped-PNG-2-32x32.png"
+    <link rel="icon" href="/wp-content/uploads/2022/10/cropped-PNG-2-32x32.png"
         sizes="32x32" />
-    <link rel="icon" href="https://staging.snackverse.com/wp-content/uploads/2022/10/cropped-PNG-2-192x192.png"
+    <link rel="icon" href="/wp-content/uploads/2022/10/cropped-PNG-2-192x192.png"
         sizes="192x192" />
     <link rel="apple-touch-icon"
-        href="https://staging.snackverse.com/wp-content/uploads/2022/10/cropped-PNG-2-180x180.png" />
+        href="/wp-content/uploads/2022/10/cropped-PNG-2-180x180.png" />
     <meta name="msapplication-TileImage"
-        content="https://staging.snackverse.com/wp-content/uploads/2022/10/cropped-PNG-2-270x270.png" />
+        content="/wp-content/uploads/2022/10/cropped-PNG-2-270x270.png" />
     <style type="text/css" id="wp-custom-css">
         #wc-stripe-payment-request-button-separator,
         #wc-stripe-payment-request-wrapper {
@@ -422,14 +422,14 @@ export const subscribeHtml = `
         </style>
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180"
-        href="https://staging.snackverse.com/wp-content/themes/shopkeeper/favicons/apple-touch-icon.png">
+        href="/wp-content/themes/shopkeeper/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="https://staging.snackverse.com/wp-content/themes/shopkeeper/favicons/favicon-32x32.png">
+        href="/wp-content/themes/shopkeeper/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="https://staging.snackverse.com/wp-content/themes/shopkeeper/favicons/favicon-16x16.png">
-    <link rel="manifest" href="https://staging.snackverse.com/wp-content/themes/shopkeeper/favicons/site.webmanifest">
+        href="/wp-content/themes/shopkeeper/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/wp-content/themes/shopkeeper/favicons/site.webmanifest">
     <link rel="mask-icon"
-        href="https://staging.snackverse.com/wp-content/themes/shopkeeper/favicons/safari-pinned-tab.svg"
+        href="/wp-content/themes/shopkeeper/favicons/safari-pinned-tab.svg"
         color="#ba271a">
     
 </head>
@@ -439,7 +439,7 @@ export const subscribeHtml = `
     <main class="block overflow-hidden">
         <style>
             .bg {
-                background-image: url('https://staging.snackverse.com/wp-content/themes/shopkeeper/images/bang_bg.png');
+                background-image: url('/wp-content/themes/shopkeeper/images/bang_bg.png');
                 background-color: #560299;
                 background-size: cover;
                 background-position: center;
@@ -492,16 +492,16 @@ export const subscribeHtml = `
                     class="fade-trigger flex flex-col-reverse flex-wrap lg:flex-row mx-auto max-w-full lg:max-w-xl w-full lg:flex-wrap lg:flex-row relative md:justify-center md:items-center lg:items-start gap-y-4 md:gap-y-14 flex-wrap">
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_1">
-                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun--white.png"
+                        <img src="/wp-content/themes/shopkeeper/images/sun--white.png"
                             alt="i"
                             class="hidden lg:block max-w-300 absolute right-5 top-0 transform -translate-y-20 translate-x-20 lg:scale-95 xl:scale-100"
                             style="z-index:-1;" />
                         <div
                             class="w-full border-3 border-white rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun_white_mobile.png"
+                            <img src="/wp-content/themes/shopkeeper/images/sun_white_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-2 pointer-events-none z-10" /><img
-                                src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -515,17 +515,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/5_snacks.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/5_snacks.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/5_snacks.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/5_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-8 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-mini-2024-600x0-c-default.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/box-mini-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-mini-2024.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/box-mini-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -545,7 +545,7 @@ export const subscribeHtml = `
                                 </div><em
                                     class="block pb-4 pt-4 md:pb-6 text-40 lg:text-45 text-center w-full mt-auto">£<strong>7.99</strong><span
                                         class="text-30">/mo</span></em>
-                                <a href="https://staging.snackverse.com/product/the-mini-box/"
+                                <a href="/product/the-mini-box/"
                                     class="mt-auto rounded-full bg-orange text-white px-0 py-4 text-20 lg:text-20 w-full md:max-w-300 mx-auto font-bold flex flex-col text-center lg:py-3 transition duration-300 ease-in-out hover:bg-purple w-full">Select</a><small
                                     class="text-white opacity-50 text-14 md:text-15 leading-140 block text-center mt-4 md:mt-4 w-full">Cancel
                                     subscription at anytime</small>
@@ -554,19 +554,19 @@ export const subscribeHtml = `
                     </div>
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_2">
-                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun--orange.png"
+                        <img src="/wp-content/themes/shopkeeper/images/sun--orange.png"
                             alt="i"
                             class="hidden lg:block max-w-480 absolute right-3 top-0 transform -translate-y-36 translate-x-28 lg:scale-95 xl:scale-100"
                             style="z-index:-1;" />
-                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/best_seller.svg"
+                        <img src="/wp-content/themes/shopkeeper/images/best_seller.svg"
                             alt="i"
                             class="max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:-rotate-2 transition duration-500" />
                         <div
                             class="w-full border-3 border-darkorange rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun_orange_mobile.png"
+                            <img src="/wp-content/themes/shopkeeper/images/sun_orange_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-6 pointer-events-none z-10" /><img
-                                src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -580,17 +580,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/10_snacks.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/10_snacks.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/10_snacks.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/10_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-7 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-original-2024-600x0-c-default.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/box-original-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-original-2024.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/box-original-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -610,7 +610,7 @@ export const subscribeHtml = `
                                 </div><em
                                     class="block pb-4 pt-4 md:pb-6 text-40 lg:text-45 text-center w-full mt-auto">£<strong>13.99</strong><span
                                         class="text-30">/mo</span></em>
-                                <a href="https://staging.snackverse.com/product/the-original-box/"
+                                <a href="/product/the-original-box/"
                                     class="mt-auto rounded-full bg-orange text-white px-0 py-4 text-20 lg:text-20 w-full md:max-w-300 mx-auto font-bold flex flex-col text-center lg:py-3 transition duration-300 ease-in-out hover:bg-purple w-full">Select</a><small
                                     class="text-white opacity-50 text-14 md:text-15 leading-140 block text-center mt-4 md:mt-4 w-full">Cancel
                                     subscription at anytime</small>
@@ -619,19 +619,19 @@ export const subscribeHtml = `
                     </div>
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_3">
-                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun--lightorange.png"
+                        <img src="/wp-content/themes/shopkeeper/images/sun--lightorange.png"
                             alt="i"
                             class="hidden lg:block max-w-600 absolute right-10 lg:right-14 xl:right-10 top-0 transform -translate-y-1/3 translate-x-1/3 lg:scale-95 xl:scale-125"
                             style="z-index:-1;" />
-                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/best_value.svg"
+                        <img src="/wp-content/themes/shopkeeper/images/best_value.svg"
                             alt="i"
                             class="max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:rotate-2 transition duration-500" />
                         <div
                             class="w-full border-3 border-orange rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sun_darker_orange_mobile.png"
+                            <img src="/wp-content/themes/shopkeeper/images/sun_darker_orange_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-6 pointer-events-none z-10" /><img
-                                src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -645,17 +645,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/20_snacks.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/20_snacks.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/20_snacks.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/20_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-6 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-premium-2024-600x0-c-default.webp"
+                                            srcset="/wp-content/themes/shopkeeper/images/box-premium-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="https://staging.snackverse.com/wp-content/themes/shopkeeper/images/box-premium-2024.png"
+                                        <img src="/wp-content/themes/shopkeeper/images/box-premium-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -675,7 +675,7 @@ export const subscribeHtml = `
                                 </div><em
                                     class="block pb-4 pt-4 md:pb-6 text-40 lg:text-45 text-center w-full mt-auto">£<strong>23.99</strong><span
                                         class="text-30">/mo</span></em>
-                                <a href="https://staging.snackverse.com/product/the-premium-box/"
+                                <a href="/product/the-premium-box/"
                                     class="mt-auto rounded-full bg-orange text-white px-0 py-4 text-20 lg:text-20 w-full md:max-w-300 mx-auto font-bold flex flex-col text-center lg:py-3 transition duration-300 ease-in-out hover:bg-purple w-full">Select</a><small
                                     class="text-white opacity-50 text-14 md:text-15 leading-140 block text-center mt-4 md:mt-4 w-full">Cancel
                                     subscription at anytime</small>
@@ -692,7 +692,7 @@ export const subscribeHtml = `
 
             @media only screen and (max-width: 767px) {
                 .bg-custom {
-                    background-image: url(https://staging.snackverse.com/wp-content/themes/shopkeeper/images/newsletterbg_mobile.png);
+                    background-image: url(/wp-content/themes/shopkeeper/images/newsletterbg_mobile.png);
                     background-size: 101% 101%;
                     background-position: center;
                 }
@@ -702,7 +702,7 @@ export const subscribeHtml = `
                 .bg-custom {
                     background-size: cover;
                     background-position: center;
-                    background-image: url(https://staging.snackverse.com/wp-content/themes/shopkeeper/images/newsletterbg.png);
+                    background-image: url(/wp-content/themes/shopkeeper/images/newsletterbg.png);
                 }
             }
         </style>

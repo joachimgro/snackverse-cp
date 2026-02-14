@@ -41,7 +41,7 @@ export interface SubscriptionBoxData {
 }
 
 const IMG =
-  "https://staging.snackverse.com/wp-content/themes/shopkeeper/images";
+  "/wp-content/themes/shopkeeper/images";
 
 export const boxes: SubscriptionBoxData[] = [
   // ─── Mini Box ────────────────────────────────────────────────

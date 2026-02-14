@@ -1,7 +1,7 @@
 import type { SubscriptionBoxData } from "@/app/subscribe/data";
 
 const IMG =
-  "https://staging.snackverse.com/wp-content/themes/shopkeeper/images";
+  "/wp-content/themes/shopkeeper/images";
 
 /** Gift box options – same structure as subscribe, with gift product URLs. */
 export const boxes: SubscriptionBoxData[] = [
