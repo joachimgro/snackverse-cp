@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className="flex flex-col w-auto md:max-w-250 md:pr-4 pl-4 lg:pl-0">
           <small className="opacity-40 md:opacity-100 leading-160 block">
-            © 2024 SnackVerse Limited.<br />All rights reserved. 128 City Road, EC1V 2NX, London, United Kingdom. Registration Number: 14307826
+            © 2026 SnackVerse Limited.<br />All rights reserved. 128 City Road, EC1V 2NX, London, United Kingdom. Registration Number: 14307826
           </small>
         </div>
       </div>

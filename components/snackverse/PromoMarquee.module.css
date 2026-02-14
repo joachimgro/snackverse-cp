@@ -3,12 +3,13 @@
   width: 100%;
   isolation: isolate;
   overflow: visible;
-  margin-top: -1rem; /* -mt-4 from reference */
+  margin-top: -0.5rem; /* -mt-4 from reference */
 }
 
 /* Lime band (sale) - should be on top with z-10 from reference */
-.promoRootSale {
+.promoRoot.promoRootSale {
   z-index: 10;
+  margin-top:-0.5rem
 }
 
 /* Purple band (stats) - should be below */
@@ -18,7 +19,7 @@
 
 @media (min-width: 768px) {
   .promoRoot {
-    margin-top: -1.5rem; /* md:-mt-6 from reference */
+    margin-top: -0.5rem; /* md:-mt-6 from reference */
   }
 }
 
@@ -43,7 +44,7 @@
 }
 
 .promoBandPurple {
-  background: #c8b2ff; /* exact light purple from reference bg-lightpurple */
+  background: rgb(151 21 255 / var(--tw-bg-opacity,1)); /* exact light purple from reference bg-lightpurple */
 }
 
 .promoViewport {
@@ -73,12 +74,15 @@
   gap: 2.5rem; /* gap-x-10 from reference = 2.5rem */
   white-space: nowrap;
   will-change: transform;
-  animation: promo-marquee 22s linear infinite;
+  /* animation: promo-marquee 22s linear infinite; */
   justify-content: center; /* text-center from reference */
+  transform: translate3d(20%, 0, 0)
 }
 
 .promoTrackReverse {
-  animation: promo-marquee-reverse 22s linear infinite;
+  transform: translate3d(50%, 0, 0)
+  /* animation: promo-marquee-reverse 22s linear infinite; */
+
 }
 
 .promoItem {

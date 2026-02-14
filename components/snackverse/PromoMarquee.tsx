@@ -56,13 +56,7 @@ export default function PromoMarquee({ variant }: PromoMarqueeProps) {
                   <a href="/terms-of-use">*</a>
                 </div>
 
-                <div className={styles.promoItem} aria-hidden="true">
-                  {saleText}
-                  <a href="#svcountdowncode">{codeLink}</a>
-                  {endText}
-                  <a href="#svcountdown">{countdownText}</a>
-                  <a href="/terms-of-use">*</a>
-                </div>
+              
               </div>
             </div>
           </div>
@@ -82,10 +76,7 @@ export default function PromoMarquee({ variant }: PromoMarqueeProps) {
                 Discover endless delights with over{" "}
                 <strong style={{ color: "#ff8c23" }}>2 million</strong> boxes shipped!
               </div>
-              <div className={`${styles.promoItem} ${styles.promoItemWhite}`} aria-hidden="true">
-                Discover endless delights with over{" "}
-                <strong style={{ color: "#ff8c23" }}>2 million</strong> boxes shipped!
-              </div>
+             
             </div>
           </div>
         </div>
