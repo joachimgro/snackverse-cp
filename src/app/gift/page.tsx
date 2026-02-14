@@ -23,7 +23,7 @@ export default function GiftPage() {
           dangerouslySetInnerHTML={{
             __html: `
               .bg {
-                background-image: url('/wp-content/themes/shopkeeper/images/bang_bg.png');
+                background-image: url('/images/bang_bg.png');
                 background-color: #560299;
                 background-size: cover;
                 background-position: center;

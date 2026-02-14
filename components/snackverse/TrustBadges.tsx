@@ -17,14 +17,14 @@ export default function TrustBadges() {
   const meteorX = useTransform(scrollYProgress, [0, 1], [0, -20]);
 
   return (
-    <div ref={containerRef} className="bg-bgpurple w-full py-20 lg:py-24 lg:pt-32 bg-full bg-center bg-no-repeat mt-16 lg:mt-24 relative bg-contain fixbgposition" style={{ backgroundImage: "url(https://snackverse.com/wp-content/themes/shopkeeper/images/bg_bars.png)" }}>
+    <div ref={containerRef} className="bg-bgpurple w-full py-20 lg:py-24 lg:pt-32 bg-full bg-center bg-no-repeat mt-16 lg:mt-24 relative bg-contain fixbgposition" style={{ backgroundImage: "url(/images/bg_bars.png)" }}>
       <div className="flex flex-col md:flex-row text-white mx-auto max-w-90 md:max-w-md md:px-6 lg:px-0 xl:max-w-xl relative w-full flex-wrap">
         <motion.div
           className="transform absolute max-w-320 w-full -top-40 -left-32 xl:-top-36 xl:left-0 transform -translate-y-10 scale-60 lg:scale-90 xl:-translate-y-20 xl:-translate-x-10"
           style={{ y: stellarY, rotate: stellarRotate }}
         >
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/stellar.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/stellar.webp" type="image/webp" />
             <img src="/page_files/stellar.png" alt="Picture" />
           </picture>
         </motion.div>
@@ -34,7 +34,7 @@ export default function TrustBadges() {
           style={{ x: meteorX }}
         >
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/meteor.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/meteor.webp" type="image/webp" />
             <img src="/page_files/meteor.png" alt="Picture" />
           </picture>
         </motion.div>
@@ -47,7 +47,7 @@ export default function TrustBadges() {
           transition={{ duration: ANIMATION_CONFIG.duration.normal, ease: ANIMATION_CONFIG.easing.easeOut }}
         >
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/shipping.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/shipping.webp" type="image/webp" />
             <img src="/page_files/shipping.png" alt="Picture" className="max-w-140 lg:max-180 xl:max-w-200" style={{ pointerEvents: "none" }} />
           </picture>
           <div className="relative mt-4 h-auto"><em className="font-bold text-24 lg:text-32 xl:text-40 block">Free Shipping</em></div>
@@ -62,7 +62,7 @@ export default function TrustBadges() {
           transition={{ duration: ANIMATION_CONFIG.duration.normal, delay: 0.1, ease: ANIMATION_CONFIG.easing.easeOut }}
         >
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/commitment.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/commitment.webp" type="image/webp" />
             <img src="/page_files/commitment.png" alt="Picture" className="max-w-140 lg:max-180 xl:max-w-200 w-full transform translate-x-2 translate-fix" style={{ pointerEvents: "none" }} />
           </picture>
           <div className="relative mt-4 h-auto"><em className="font-bold text-24 lg:text-32 xl:text-40 block">No Commitment</em></div>
@@ -76,7 +76,7 @@ export default function TrustBadges() {
           transition={{ duration: ANIMATION_CONFIG.duration.normal, delay: 0.2, ease: ANIMATION_CONFIG.easing.easeOut }}
         >
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/satisfaction.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/satisfaction.webp" type="image/webp" />
             <img src="/page_files/satisfaction.png" alt="Picture" className="max-w-140 lg:max-180 xl:max-w-200 w-full" style={{ pointerEvents: "none" }} />
           </picture>
           <div className="relative mt-4 h-auto"><em className="font-bold text-24 lg:text-32 xl:text-40 block">100% Satisfaction</em></div>

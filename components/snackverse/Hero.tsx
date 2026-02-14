@@ -25,7 +25,7 @@ export default function Hero() {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: `body {min-height: 200vh;} .hero { background-image: url('https://snackverse.com/wp-content/themes/shopkeeper/images/hero_bg_mobile.jpg'); background-color:#560299; background-size:120% 100%; background-position: center 0%; background-repeat: no-repeat; } @media only screen and (min-width: 1025px) { .hero { background-image: url('https://snackverse.com/wp-content/themes/shopkeeper/images/bg-hero.jpg'); min-height:800px; height: 100%; background-size: 110% 120%; background-position: 50% 20%; } } @media only screen and (min-width: 1600px) { .hero { height: 100vh; min-height:900px; max-height: auto; background-size:120% 120%; background-position: 90% 0%; } } .subscribe-btn{ display: none; } @media only screen and (max-width: 1024px) { #mce-EMAIL{ max-width: none !important; } } @media only screen and (max-width: 767px) { .subscribe-btn { background: rgba(77, 0, 137,0.85); width: 100%; position: fixed; bottom: -87px; padding-top: 0.7em; display: flex !important; justify-content: center; height: 171px; z-index: 1000; } body { padding-bottom: 5.2em; } }` }} />
+      <style dangerouslySetInnerHTML={{ __html: `body {min-height: 200vh;} .hero { background-image: url('/images/hero_bg_mobile.jpg'); background-color:#560299; background-size:120% 100%; background-position: center 0%; background-repeat: no-repeat; } @media only screen and (min-width: 1025px) { .hero { background-image: url('/images/bg-hero.jpg'); min-height:800px; height: 100%; background-size: 110% 120%; background-position: 50% 20%; } } @media only screen and (min-width: 1600px) { .hero { height: 100vh; min-height:900px; max-height: auto; background-size:120% 120%; background-position: 90% 0%; } } .subscribe-btn{ display: none; } @media only screen and (max-width: 1024px) { #mce-EMAIL{ max-width: none !important; } } @media only screen and (max-width: 767px) { .subscribe-btn { background: rgba(77, 0, 137,0.85); width: 100%; position: fixed; bottom: -87px; padding-top: 0.7em; display: flex !important; justify-content: center; height: 171px; z-index: 1000; } body { padding-bottom: 5.2em; } }` }} />
       <div ref={containerRef} className="hero flex flex-col relative bg-purple bg-no-repeat bg-hero h-full lg:h-screen xl:h-screen xl:max-h-860">
         <Header />
         <motion.picture
@@ -34,8 +34,8 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: ANIMATION_CONFIG.duration.normal }}
         >
-          <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/planets-1400x0-c-default.webp" type="image/webp" />
-          <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/planets_mobile-800x0-c-default.webp" type="image/webp" />
+          <source media="(min-width: 768px)" srcSet="/images/planets-1400x0-c-default.webp" type="image/webp" />
+          <source media="(min-width: 300px)" srcSet="/images/planets_mobile-800x0-c-default.webp" type="image/webp" />
           <img src="/page_files/planets_mobile.png" alt="Picture" className="absolute top-0 right-0 w-full md:top-10 md:right-1/4 transform md:-translate-y-1/2 max-w-full md:max-w-md lg:right-auto lg:left-1/4 2xl:left-1/3 xl:-translate-x-20 2xl:translate-x-0 xl:max-w-1200" />
         </motion.picture>
 
@@ -83,8 +83,8 @@ export default function Hero() {
               style={{ y: orangeY, rotate: orangeRotate }}
             >
               <picture style={{ perspective: "800px", WebkitPerspective: "800px" }}>
-                <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/orange_desktop.webp" type="image/webp" />
-                <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/orange_mobile.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcSet="/images/orange_desktop.webp" type="image/webp" />
+                <source media="(min-width: 300px)" srcSet="/images/orange_mobile.webp" type="image/webp" />
                 <img src="/page_files/orange_mobile.png" alt="Picture" className="animate-float" />
               </picture>
             </motion.div>
@@ -94,8 +94,8 @@ export default function Hero() {
               style={{ y: appleY, rotate: appleRotate }}
             >
               <picture>
-                <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/apple_desktop.webp" type="image/webp" />
-                <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/apple_mobile.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcSet="/images/apple_desktop.webp" type="image/webp" />
+                <source media="(min-width: 300px)" srcSet="/images/apple_mobile.webp" type="image/webp" />
                 <img src="/page_files/apple_mobile.png" alt="Picture" className="animate-float-slow" />
               </picture>
             </motion.div>
@@ -105,16 +105,16 @@ export default function Hero() {
               style={{ perspective: "800px", WebkitPerspective: "800px", y: candyY, rotate: candyRotate }}
             >
               <picture>
-                <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/candy_desktop.webp" type="image/webp" />
-                <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/candy_mobile.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcSet="/images/candy_desktop.webp" type="image/webp" />
+                <source media="(min-width: 300px)" srcSet="/images/candy_mobile.webp" type="image/webp" />
                 <img src="/page_files/candy_mobile.png" alt="Picture" className="animate-float-fast" />
               </picture>
             </motion.div>
 
             <div className="boxshadow transform scale-125 xl:scale-140 2xl:scale-150 pointer-events-none translate-x-0 xl:translate-x-20 xl:w-full max-w-400 xl:max-w-500 xl:translate-y-6 pointer-events-none">
               <picture>
-                <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_shadow_desktop.webp" type="image/webp" />
-                <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_shadow_desktop.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcSet="/images/box_shadow_desktop.webp" type="image/webp" />
+                <source media="(min-width: 300px)" srcSet="/images/box_shadow_desktop.webp" type="image/webp" />
                 <img src="/page_files/box_shadow.png" alt="Picture" className="animate-bob" />
               </picture>
             </div>
@@ -124,8 +124,8 @@ export default function Hero() {
               style={{ rotate: boxRotate }}
             >
               <picture>
-                <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_desktop-900x0-c-default.webp" type="image/webp" />
-                <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_mobile.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcSet="/images/box_desktop-900x0-c-default.webp" type="image/webp" />
+                <source media="(min-width: 300px)" srcSet="/images/box_mobile.webp" type="image/webp" />
                 <img src="/page_files/box_mobile.png" alt="Picture" className="w-full" />
               </picture>
             </motion.div>

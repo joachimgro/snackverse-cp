@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="mx-auto w-auto">
           <a href="https://snackverse.com/" className="fadeIn inline-flex" style={{ pointerEvents: "auto", transform: "translate(0px, 0px)", opacity: 1 }}>
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/logo.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/logo.webp" type="image/webp" />
               <img src="/page_files/logo.png" className="logo max-w-100 md:max-w-200" alt="Picture" />
             </picture>
           </a>

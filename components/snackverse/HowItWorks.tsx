@@ -26,7 +26,7 @@ export default function HowItWorks() {
         >
           <div className="relative flex flex-col">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/step1_.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/step1_.webp" type="image/webp" />
               <img src="/page_files/step1_.png" alt="Picture" className="max-w-full xl:max-w-400 mx-auto transform -translate-x-7 md:-translate-x-4" style={{ pointerEvents: "none" }} />
             </picture>
           </div>
@@ -43,7 +43,7 @@ export default function HowItWorks() {
         >
           <div className="relative flex flex-col">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/step2_.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/step2_.webp" type="image/webp" />
               <img src="/page_files/step2_.png" alt="Picture" className="max-w-full xl:max-w-400 mx-auto transform -translate-x-7 md:-translate-x-4" style={{ pointerEvents: "none" }} />
             </picture>
           </div>
@@ -59,8 +59,8 @@ export default function HowItWorks() {
         >
           <div className="relative flex flex-col">
             <picture>
-              <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/step3_.webp" type="image/webp" />
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/step3_mobile.webp" type="image/webp" />
+              <source media="(min-width: 768px)" srcSet="/images/step3_.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/step3_mobile.webp" type="image/webp" />
               <img src="/page_files/step3_.png" alt="Picture" className="max-w-full xl:max-w-400 mx-auto transform -translate-x-3 md:-translate-x-2" style={{ pointerEvents: "none" }} />
             </picture>
           </div>

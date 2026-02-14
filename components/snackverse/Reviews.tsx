@@ -4,14 +4,14 @@ export default function Reviews() {
       <div className="flex flex-col text-black mx-auto max-w-90 md:max-w-lg xl:max-w-xl relative">
         <div className="max-w-100 -top-10 -right-14 sm:-right-28 sm:max-w-200 md:top-10 xmd:translate-x-32 md:translate-x-20 lg:max-w-250 mx-auto absolute lg:top-0 scale-90 xl:scale-100 lg:-right-40 lg:translate-x-16 xl:-right-60 xl:translate-x-20 2xl:translate-x-20 transform z-10">
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/spaceship.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/spaceship.webp" type="image/webp" />
             <img src="/page_files/spaceship.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": -10, "rotateX":30, "x":20, "smoothness": 30}' style={{ transform: "translate3d(0.029px, 0px, 0px) rotateX(0.029deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0.029px, 0px, 0px) rotateX(0.029deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
           </picture>
         </div>
 
         <div className="max-w-200 w-full sm:max-w-250 lg:max-w-300 absolute -top-20 -right-32 md:top-10 md:translate-x-20  xmd:translate-x-32 lg:top-0 lg:translate-x-20 lg:-right-40 xl:-right-60 2xl:right-42 2xl:top-8 transform mx-auto">
           <picture>
-            <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_bg.webp" type="image/webp" />
+            <source media="(min-width: 300px)" srcSet="/images/radial_bg.webp" type="image/webp" />
             <img src="/page_files/radial_bg.png" alt="Picture" className="js-parallax" data-parallax='{"scale": 0.8, "rotate": 10, "x": 20, "smoothness": 40}' style={{ transform: "translate3d(0.039px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0.039px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
           </picture>
         </div>

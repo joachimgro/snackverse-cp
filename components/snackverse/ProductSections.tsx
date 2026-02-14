@@ -11,14 +11,14 @@ export default function ProductSections() {
         <div className="flex flex-col relative mx-auto max-w-90 xl:max-w-xl">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-x-0 relative">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_bg.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/radial_bg.webp" type="image/webp" />
               <img src="/page_files/radial_bg.png" alt="Picture" className="max-w-400 w-full md:max-w-500 absolute left-40 -top-10 transform mx-auto" />
             </picture>
 
             <div className="flex flex-col gap-y-8 order-1 lg:order-2 z-10 relative fadeIn md:hidden" style={{ pointerEvents: "auto", transform: "translate(0px, 0px)", opacity: 1 }}>
               <div className="max-w-400 w-full md:max-w-700 transform scale-125 md:scale-100 md:scale-110 -translate-x-0 xl:translate-x-10 mx-auto">
                 <picture>
-                  <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_inside.webp" type="image/webp" />
+                  <source media="(min-width: 300px)" srcSet="/images/box_inside.webp" type="image/webp" />
                   <img src="/page_files/box_inside.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": -2, "smoothness": 40}' style={{ transform: "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
                 </picture>
               </div>
@@ -56,7 +56,7 @@ export default function ProductSections() {
             <div className="flex flex-col gap-y-8 order-1 lg:order-2 z-10 relative fadeIn hidden md:flex" style={{ pointerEvents: "auto", transform: "translate(0px, 0px)", opacity: 1 }}>
               <div className="max-w-400 w-full md:max-w-700 transform scale-125 md:scale-100 md:scale-110 -translate-x-0 xl:translate-x-10 mx-auto">
                 <picture>
-                  <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/box_inside.webp" type="image/webp" />
+                  <source media="(min-width: 300px)" srcSet="/images/box_inside.webp" type="image/webp" />
                   <img src="/page_files/box_inside.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": -2, "smoothness": 40}' style={{ transform: "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
                 </picture>
               </div>
@@ -68,14 +68,14 @@ export default function ProductSections() {
           </div>
           <div className="hidden lg:inline-flex max-w-140 md:max-w-180 transform absolute -left-20 lg:-left-26 bottom-80 z-0">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/cake_1.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/cake_1.webp" type="image/webp" />
               <img src="/page_files/cake_1.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": 50, "x": -80, "y":40, "smoothness": 20}' style={{ transform: "translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
             </picture>
           </div>
 
           <div className="hidden lg:inline-flex max-w-140 md:max-w-250 transform absolute left-auto -right-20 md:right-auto md:-left-26 bottom-0 z-0 ">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/cake_2.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/cake_2.webp" type="image/webp" />
               <img src="/page_files/cake_2.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": 100, "x": -100, "y":100, "smoothness": 40}' style={{ transform: "translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
             </picture>
           </div>
@@ -86,21 +86,21 @@ export default function ProductSections() {
         <div className="relative max-w-90 w-full mx-auto lg:max-w-md">
           <div className="max-w-50 md:max-w-100 transform absolute left-0 top-0 transform xl:-translate-y-10 xl:-translate-x-32">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/fb.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/fb.webp" type="image/webp" />
               <img src="/page_files/fb.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": -20, "scale": 0.76,"y":40, "smoothness": 10}' style={{ transform: "translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
             </picture>
           </div>
 
           <div className="max-w-40 md:max-w-80 transform absolute right-0 md:right-auto md:left-1/2 top-0 transform xl:translate-y-20 xl:translate-x-20">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/mail.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/mail.webp" type="image/webp" />
               <img src="/page_files/mail.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": 30, "scale": 0.7, "x": 20, "smoothness": 20}' style={{ transform: "translate3d(0.019px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0.019px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
             </picture>
           </div>
 
           <div className="max-w-50 md:max-w-80 transform absolute -right-10 md:right-0 top-20 md:top-1/3 md:top-0 transform xl:-translate-y-20 xl:translate-x-32">
             <picture>
-              <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/twitter.webp" type="image/webp" />
+              <source media="(min-width: 300px)" srcSet="/images/twitter.webp" type="image/webp" />
               <img src="/page_files/twitter.png" alt="Picture" className="js-parallax" data-parallax='{"rotateZ": 40, "scale": 0.6, "y": 20, "smoothness": 40}' style={{ transform: "translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1)", WebkitTransform: "translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1)" }} />
             </picture>
           </div>
@@ -124,8 +124,8 @@ export default function ProductSections() {
         </div>
 
         <picture>
-          <source media="(min-width: 768px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/people.webp" type="image/webp" />
-          <source media="(min-width: 300px)" srcSet="https://snackverse.com/wp-content/themes/shopkeeper/images/people-640x200-c-default.webp" type="image/webp" />
+          <source media="(min-width: 768px)" srcSet="/images/people.webp" type="image/webp" />
+          <source media="(min-width: 300px)" srcSet="/images/people-640x200-c-default.webp" type="image/webp" />
           <img src="/page_files/people.png" alt="Picture" className="max-w-full w-full lg:max-w-xl mx-auto" />
         </picture>
       </div>

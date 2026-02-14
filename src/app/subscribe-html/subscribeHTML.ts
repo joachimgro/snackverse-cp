@@ -439,7 +439,7 @@ export const subscribeHtml = `
     <main class="block overflow-hidden">
         <style>
             .bg {
-                background-image: url('/wp-content/themes/shopkeeper/images/bang_bg.png');
+                background-image: url('/images/bang_bg.png');
                 background-color: #560299;
                 background-size: cover;
                 background-position: center;
@@ -492,16 +492,16 @@ export const subscribeHtml = `
                     class="fade-trigger flex flex-col-reverse flex-wrap lg:flex-row mx-auto max-w-full lg:max-w-xl w-full lg:flex-wrap lg:flex-row relative md:justify-center md:items-center lg:items-start gap-y-4 md:gap-y-14 flex-wrap">
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_1">
-                        <img src="/wp-content/themes/shopkeeper/images/sun--white.png"
+                        <img src="/images/sun--white.png"
                             alt="i"
                             class="hidden lg:block max-w-300 absolute right-5 top-0 transform -translate-y-20 translate-x-20 lg:scale-95 xl:scale-100"
                             style="z-index:-1;" />
                         <div
                             class="w-full border-3 border-white rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="/wp-content/themes/shopkeeper/images/sun_white_mobile.png"
+                            <img src="/images/sun_white_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-2 pointer-events-none z-10" /><img
-                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -515,17 +515,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/5_snacks.webp"
+                                            srcset="/images/5_snacks.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/5_snacks.png"
+                                        <img src="/images/5_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-8 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/box-mini-2024-600x0-c-default.webp"
+                                            srcset="/images/box-mini-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/box-mini-2024.png"
+                                        <img src="/images/box-mini-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -554,19 +554,19 @@ export const subscribeHtml = `
                     </div>
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_2">
-                        <img src="/wp-content/themes/shopkeeper/images/sun--orange.png"
+                        <img src="/images/sun--orange.png"
                             alt="i"
                             class="hidden lg:block max-w-480 absolute right-3 top-0 transform -translate-y-36 translate-x-28 lg:scale-95 xl:scale-100"
                             style="z-index:-1;" />
-                        <img src="/wp-content/themes/shopkeeper/images/best_seller.svg"
+                        <img src="/images/best_seller.svg"
                             alt="i"
                             class="max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:-rotate-2 transition duration-500" />
                         <div
                             class="w-full border-3 border-darkorange rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="/wp-content/themes/shopkeeper/images/sun_orange_mobile.png"
+                            <img src="/images/sun_orange_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-6 pointer-events-none z-10" /><img
-                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -580,17 +580,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/10_snacks.webp"
+                                            srcset="/images/10_snacks.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/10_snacks.png"
+                                        <img src="/images/10_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-7 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/box-original-2024-600x0-c-default.webp"
+                                            srcset="/images/box-original-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/box-original-2024.png"
+                                        <img src="/images/box-original-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -619,19 +619,19 @@ export const subscribeHtml = `
                     </div>
                     <div
                         class="fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_3">
-                        <img src="/wp-content/themes/shopkeeper/images/sun--lightorange.png"
+                        <img src="/images/sun--lightorange.png"
                             alt="i"
                             class="hidden lg:block max-w-600 absolute right-10 lg:right-14 xl:right-10 top-0 transform -translate-y-1/3 translate-x-1/3 lg:scale-95 xl:scale-125"
                             style="z-index:-1;" />
-                        <img src="/wp-content/themes/shopkeeper/images/best_value.svg"
+                        <img src="/images/best_value.svg"
                             alt="i"
                             class="max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:rotate-2 transition duration-500" />
                         <div
                             class="w-full border-3 border-orange rounded-40 lg:rounded-60 px-0 lg:px-0 mb-10 lg:mb-20 relative bg-darkpurple flex flex-col flex-1 overflow-hidden">
-                            <img src="/wp-content/themes/shopkeeper/images/sun_darker_orange_mobile.png"
+                            <img src="/images/sun_darker_orange_mobile.png"
                                 alt="i"
                                 class="lg:hidden max-w-full w-full absolute right-0 left-0 -top-6 pointer-events-none z-10" /><img
-                                src="/wp-content/themes/shopkeeper/images/sb_radialbg.png"
+                                src="/images/sb_radialbg.png"
                                 alt="Snacks"
                                 class="hidden lg:block object-cover w-full absolute left-0 -top-20 right-0 bottom-0 opacity-10" />
                             <div
@@ -645,17 +645,17 @@ export const subscribeHtml = `
                                     <picture
                                         class="max-w-110 fadeIn absolute right-4 lg:right-2 xl:right-5 2xl:right-6 bottom-3 lg:bottom-0 xl:bottom-1 z-20 transform scale-110 qty">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/20_snacks.webp"
+                                            srcset="/images/20_snacks.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/20_snacks.png"
+                                        <img src="/images/20_snacks.png"
                                             alt="Snacks" class="group-hover:-translate-y-5 duration-500 ease-in" />
                                     </picture>
                                     <picture
                                         class="transform -translate-y-5 lg:-translate-y-2 xl:-translate-y-6 lg:group-hover:-translate-y-1 xl:group-hover:-translate-y-2 transition duration-500 ease-in-out snacks">
                                         <source media="(min-width: 300px)"
-                                            srcset="/wp-content/themes/shopkeeper/images/box-premium-2024-600x0-c-default.webp"
+                                            srcset="/images/box-premium-2024-600x0-c-default.webp"
                                             type="image/webp">
-                                        <img src="/wp-content/themes/shopkeeper/images/box-premium-2024.png"
+                                        <img src="/images/box-premium-2024.png"
                                             alt="Snacks"
                                             class="w-full fadeIn transform -rotate-12 scale-90 lg:scale-95 xl:scale-90" />
                                     </picture>
@@ -692,7 +692,7 @@ export const subscribeHtml = `
 
             @media only screen and (max-width: 767px) {
                 .bg-custom {
-                    background-image: url(/wp-content/themes/shopkeeper/images/newsletterbg_mobile.png);
+                    background-image: url(/images/newsletterbg_mobile.png);
                     background-size: 101% 101%;
                     background-position: center;
                 }
@@ -702,7 +702,7 @@ export const subscribeHtml = `
                 .bg-custom {
                     background-size: cover;
                     background-position: center;
-                    background-image: url(/wp-content/themes/shopkeeper/images/newsletterbg.png);
+                    background-image: url(/images/newsletterbg.png);
                 }
             }
         </style>

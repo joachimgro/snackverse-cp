@@ -41,7 +41,7 @@ export interface SubscriptionBoxData {
 }
 
 const IMG =
-  "/wp-content/themes/shopkeeper/images";
+  "/images";
 
 export const boxes: SubscriptionBoxData[] = [
   // ─── Mini Box ────────────────────────────────────────────────

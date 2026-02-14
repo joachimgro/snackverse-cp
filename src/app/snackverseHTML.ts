@@ -8,7 +8,7 @@ export const snackverseHtml = `
 <style>
 body {min-height: 200vh;}
 .hero { 
-    background-image: url('https://snackverse.com/wp-content/themes/shopkeeper/images/hero_bg_mobile.jpg');
+    background-image: url('/images/hero_bg_mobile.jpg');
     background-color:#560299;
     background-size:120% 100%;
     background-position: center 0%;
@@ -18,7 +18,7 @@ body {min-height: 200vh;}
 
 @media only screen and (min-width: 1025px) {
     .hero { 
-        background-image: url('https://snackverse.com/wp-content/themes/shopkeeper/images/bg-hero.jpg'); 
+        background-image: url('/images/bg-hero.jpg'); 
         min-height:800px;
         height: 100%;
         background-size: 110% 120%;
@@ -37,8 +37,8 @@ body {min-height: 200vh;}
 </style>
 <div class="hero flex flex-col relative bg-purple bg-no-repeat bg-hero h-full lg:h-screen xl:h-screen xl:max-h-860">
                     <picture>
-        <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/planets-1400x0-c-default.webp" type="image/webp">
-        <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/planets_mobile-800x0-c-default.webp" type="image/webp">
+        <source media="(min-width: 768px)" srcset="/images/planets-1400x0-c-default.webp" type="image/webp">
+        <source media="(min-width: 300px)" srcset="/images/planets_mobile-800x0-c-default.webp" type="image/webp">
         <img src="/page_files/planets_mobile.png" alt="Picture" class="absolute top-0 right-0 w-full md:top-10 md:right-1/4 transform md:-translate-y-1/2 max-w-full md:max-w-md lg:right-auto lg:left-1/4 2xl:left-1/3 xl:-translate-x-20 2xl:translate-x-0 xl:max-w-1200 js-revealPlanets" style="opacity: 1; visibility: inherit;">
     </picture>
 
@@ -46,9 +46,9 @@ body {min-height: 200vh;}
        
 <div class="menu__wrapper bg-purplenavbar lg:bg-transaprent fixed top-0 left-0 right-0 lg:relative z-40" style="backdrop-filter: blur(0px);">
     <div class="flex flex-row justify-between mx-auto max-w-90 md:max-w-95 xl:px-6 xl:max-w-xl items-center w-full py-4">
-                    <a href="https://snackverse.com/">
+                    <a href="/">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/logo.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/logo.webp" type="image/webp">
                 <img src="/page_files/logo.png" class="logo max-w-80 md:max-w-200" alt="Picture">
             </picture>
         </a>
@@ -68,31 +68,31 @@ body {min-height: 200vh;}
 
   <ul class="flex flex-col lg:flex-row items-center gap-y-10 lg:gap-y-0 lg:items-end gap-x-4 text-white lg:gap-x-10 font-medium text-24 lg:text-18 pb-8 md:pb-0">
         <li class="slideUp">
-    <a href="https://snackverse.com/subscribe/" class="text-white relative menu-hover">Subscribe</a>
+    <a href="/subscribe/" class="text-white relative menu-hover">Subscribe</a>
   </li>
   <li class="slideUp">
-    <a href="https://snackverse.com/gift/" class="text-white relative menu-hover">Give a gift</a>
+    <a href="/gift/" class="text-white relative menu-hover">Give a gift</a>
   </li>
   
   <li class="slideUp">
-    <a href="https://snackverse.com/our-previous-boxes/" class="text-white relative menu-hover">Previous boxes</a>
+    <a href="/our-previous-boxes/" class="text-white relative menu-hover">Previous boxes</a>
   </li>
 
   <li class="slideUp">
-    <a href="https://snackverse.com/faqs/" class="text-white relative menu-hover">FAQs</a>
+    <a href="/faqs/" class="text-white relative menu-hover">FAQs</a>
   </li>
 
   <li class="slideUp">
-    <a href="https://snackverse.com/refer-a-friend/" class="text-white relative menu-hover">Refer a friend</a>
+    <a href="/refer-a-friend/" class="text-white relative menu-hover">Refer a friend</a>
   </li>
 
 
 
   <li class="flex lg:hidden slideUp">
-    <a href="https://snackverse.com/my-account/" class="text-white relative menu-hover">My Account</a>
+    <a href="/my-account/" class="text-white relative menu-hover">My Account</a>
   </li>
   <li class="hidden lg:inline-flex xl:pl-4 slideUp">
-    <a href="https://snackverse.com/my-account/" class="text-white hover:text-orange">
+    <a href="/my-account/" class="text-white hover:text-orange">
       <svg class="transition duration-300 ease-in-out" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9998 12.5C21.9998 15.5134 20.6669 18.2154 18.5586 20.0488C16.8028 21.5756 14.5092 22.5 11.9998 22.5C9.49028 22.5 7.19669 21.5756 5.44092 20.0488C3.3326 18.2154 1.99976 15.5134 1.99976 12.5C1.99976 6.97715 6.47691 2.5 11.9998 2.5C17.5226 2.5 21.9998 6.97715 21.9998 12.5ZM14.9998 9.5C14.9998 7.84315 13.6566 6.5 11.9998 6.5C10.3429 6.5 8.99976 7.84315 8.99976 9.5C8.99976 11.1569 10.3429 12.5 11.9998 12.5C13.6566 12.5 14.9998 11.1569 14.9998 9.5ZM11.9998 14.5C13.7125 14.5 14.8388 15.4166 15.6329 16.4355C16.2255 17.1957 16.0215 18.3107 15.162 18.7467C14.2121 19.2285 13.1377 19.5 11.9998 19.5C10.8619 19.5 9.78737 19.2285 8.83754 18.7467C7.97797 18.3107 7.77403 17.1956 8.36656 16.4355C9.16072 15.4166 10.287 14.5 11.9998 14.5Z" fill="currentColor"></path>
       </svg>
@@ -108,31 +108,31 @@ body {min-height: 200vh;}
 
   <ul class="flex flex-col lg:flex-row items-center gap-y-10 lg:gap-y-0 lg:items-end gap-x-4 text-white lg:gap-x-10 font-medium text-24 lg:text-18 pb-8 md:pb-0">
         <li class="slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/subscribe/" class="text-white relative menu-hover">Subscribe</a>
+    <a href="/subscribe/" class="text-white relative menu-hover">Subscribe</a>
   </li>
   <li class="slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/gift/" class="text-white relative menu-hover">Give a gift</a>
+    <a href="/gift/" class="text-white relative menu-hover">Give a gift</a>
   </li>
   
   <li class="slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/our-previous-boxes/" class="text-white relative menu-hover">Previous boxes</a>
+    <a href="/our-previous-boxes/" class="text-white relative menu-hover">Previous boxes</a>
   </li>
 
   <li class="slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/faqs/" class="text-white relative menu-hover">FAQs</a>
+    <a href="/faqs/" class="text-white relative menu-hover">FAQs</a>
   </li>
 
   <li class="slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/refer-a-friend/" class="text-white relative menu-hover">Refer a friend</a>
+    <a href="/refer-a-friend/" class="text-white relative menu-hover">Refer a friend</a>
   </li>
 
 
 
   <li class="flex lg:hidden slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/my-account/" class="text-white relative menu-hover">My Account</a>
+    <a href="/my-account/" class="text-white relative menu-hover">My Account</a>
   </li>
   <li class="hidden lg:inline-flex xl:pl-4 slideUp" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-    <a href="https://snackverse.com/my-account/" class="text-white hover:text-orange">
+    <a href="/my-account/" class="text-white hover:text-orange">
       <svg class="transition duration-300 ease-in-out" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9998 12.5C21.9998 15.5134 20.6669 18.2154 18.5586 20.0488C16.8028 21.5756 14.5092 22.5 11.9998 22.5C9.49028 22.5 7.19669 21.5756 5.44092 20.0488C3.3326 18.2154 1.99976 15.5134 1.99976 12.5C1.99976 6.97715 6.47691 2.5 11.9998 2.5C17.5226 2.5 21.9998 6.97715 21.9998 12.5ZM14.9998 9.5C14.9998 7.84315 13.6566 6.5 11.9998 6.5C10.3429 6.5 8.99976 7.84315 8.99976 9.5C8.99976 11.1569 10.3429 12.5 11.9998 12.5C13.6566 12.5 14.9998 11.1569 14.9998 9.5ZM11.9998 14.5C13.7125 14.5 14.8388 15.4166 15.6329 16.4355C16.2255 17.1957 16.0215 18.3107 15.162 18.7467C14.2121 19.2285 13.1377 19.5 11.9998 19.5C10.8619 19.5 9.78737 19.2285 8.83754 18.7467C7.97797 18.3107 7.77403 17.1956 8.36656 16.4355C9.16072 15.4166 10.287 14.5 11.9998 14.5Z" fill="currentColor"></path>
       </svg>
@@ -141,7 +141,7 @@ body {min-height: 200vh;}
 </ul>
 
             <div class="slideUp mt-auto" style="opacity: 0; visibility: hidden; transform: translate(0px, 20px);">
-                <a href="https://snackverse.com/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 lg:text-32 text-center justify-center">Get your snack box</a>
+                <a href="/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 lg:text-32 text-center justify-center">Get your snack box</a>
             </div>
             
         </div>
@@ -160,7 +160,7 @@ body {min-height: 200vh;}
                     Each month we deliver a box of snacks, from a different country, to your door. <br class="md:hidden">Get a taste of the world!
                 </p>
                 <div class="js-moveUp js-subscribe-btn-call" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                    <a href="https://snackverse.com/subscribe/" class="rounded-full bg-orange text-white px-10 py-4 lg:py-6 lg:px-10 text-white inline-flex mt-10 mb-10 md:mb-20 font-bold transition duration-300 ease-in-out hover:bg-darkorange md:text-24 xl:text-28 2xl:text-30 hidden lg:inline-flex">Get your snack box</a>
+                    <a href="/subscribe/" class="rounded-full bg-orange text-white px-10 py-4 lg:py-6 lg:px-10 text-white inline-flex mt-10 mb-10 md:mb-20 font-bold transition duration-300 ease-in-out hover:bg-darkorange md:text-24 xl:text-28 2xl:text-30 hidden lg:inline-flex">Get your snack box</a>
                 </div>
             </div>
         </div>
@@ -171,8 +171,8 @@ body {min-height: 200vh;}
                             
             <div class="max-w-130 transform absolute left-0 top-0 z-10 -translate-x-4 xl:scale-140 2xl:scale-150 xl:max-w-200 js-revealBox--details pointer-events-none" style="transform: translate(-16px, 0px); opacity: 1; visibility: inherit;">
                 <picture style="perspective:800px; -webkit-perspective:800px; perspective:800px; -webkit-perspective:800px; ">
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/orange_desktop.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/orange_mobile.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/orange_desktop.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/orange_mobile.webp" type="image/webp">
                     <img src="/page_files/orange_mobile.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -360, &quot;z&quot;: 10, &quot;y&quot;: -100, &quot;x&quot;: -300, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0.019px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0.019px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
                 </picture>
             </div>
@@ -180,8 +180,8 @@ body {min-height: 200vh;}
                             
             <div class="max-w-220 transform absolute left-0 bottom-10 z-10 -translate-x-14 xl:scale-140 2xl:scale-150 lg:translate-y-10 lg:-translate-x-20 2xl:-translate-y-10 xl:-translate-x-4 pointer-events-none">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/apple_desktop.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/apple_mobile.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/apple_desktop.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/apple_mobile.webp" type="image/webp">
                     <img src="/page_files/apple_mobile.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 80, &quot;y&quot;: 100, &quot;x&quot;: -100, &quot;smoothness&quot;: 10}" style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.01deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.01deg) scaleX(1) scaleY(1) scaleZ(1); ">
                 </picture>
             </div>
@@ -189,8 +189,8 @@ body {min-height: 200vh;}
                                             
             <div class="max-w-220 transform absolute right-0 bottom-0 z-10 translate-y-8 translate-x-10  lg:translate-x-20 lg:translate-y-20 2xl:translate-x-20 2xl:translate-y-4 xl:scale-150 pointer-events-none" style="perspective:800px; -webkit-perspective:800px; perspective:800px; -webkit-perspective:800px; ">
                 <picture class="js-parallax" data-parallax="{&quot;z&quot;: 150, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0.019px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0.019px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/candy_desktop.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/candy_mobile.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/candy_desktop.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/candy_mobile.webp" type="image/webp">
                     <img src="/page_files/candy_mobile.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 30, &quot;scaleZ&quot;: 200, &quot;y&quot;: 40, &quot;x&quot;: 20, &quot;smoothness&quot;: 30}" style="transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1.029); -webkit-transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1.029); ">
                 </picture>
             </div>
@@ -198,16 +198,16 @@ body {min-height: 200vh;}
 
                                             <div class="boxshadow transform scale-125 xl:scale-140 2xl:scale-150 pointer-events-none translate-x-0 xl:translate-x-20 xl:w-full max-w-400 xl:max-w-500 xl:translate-y-6 pointer-events-none">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_shadow_desktop.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_shadow_desktop.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/box_shadow_desktop.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/box_shadow_desktop.webp" type="image/webp">
                     <img src="/page_files/box_shadow.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 100, &quot;smoothness&quot;: 30}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); ">
                 </picture>
             </div>
 
                                             <div class="transform absolute left-auto right-auto top-10 xl:top-14 -translate-x-3 pointer-events-none max-w-400 scale-95 lg:scale-125 xl:-translate-y-10 xl:max-w-600 xl:scale-105 2xl:scale-125 2xl:-translate-y-0 xl:translate-x-2 pointer-events-none">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_desktop-900x0-c-default.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_mobile.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/box_desktop-900x0-c-default.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/box_mobile.webp" type="image/webp">
                     <img src="/page_files/box_mobile.png" alt="Picture" class="w-full js-parallax" data-parallax="{&quot;rotateZ&quot;: -10, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
                 </picture>
             </div>
@@ -241,10 +241,10 @@ body {
 }
 </style>
         <div class="pb-4 lg:hidden md-hidden sm-hidden subscribe-btn">
-            <a href="https://snackverse.com/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 xl:text-32 text-center justify-center">Get your snack box</a>
+            <a href="/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 xl:text-32 text-center justify-center">Get your snack box</a>
         </div>
         <div class="pb-4 lg:hidden w-full px-10 text-center js-moveUp js-subscribe-btn-call" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-            <a href="https://snackverse.com/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 xl:text-32 text-center justify-center">Get your snack box</a>
+            <a href="/subscribe/" class="max-w-300  md:max-w-400 md:py-6 md:mt-4 text-20 rounded-full bg-orange text-white px-10 py-4 text-white inline-flex w-full font-bold transition duration-300 ease-in-out mb-20 hover:bg-darkorange md:text-24 xl:text-32 text-center justify-center">Get your snack box</a>
         </div>
         
     </div>
@@ -257,12 +257,12 @@ color: #4b4354 !important;
 <div class="revealMarquee marquee bg-lime py-4 text-black flex flex-row gap-x-10 flex-wrap lg:flex-nowrap md:text-25 lg:text-20 xl:text-25 font-bold lg:whitespace-nowrap transform rotate-2 z-10 relative -mt-4 md:-mt-6 text-center justify-center px-10 lg:px-0 overflow-hidden">
     <div class="lg:hidden">
         <div class="w-auto text" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
-            🚨 FLASH SALE ENDS TONIGHT! 🚨 Use Code: <a href="https://snackverse.com/#svcountdowncode">GONEBYMIDNIGHT</a> for 50% OFF ⏳ Ends <a href="https://snackverse.com/#svcountdown">in 8h 51m 51s</a><a href="https://snackverse.com/terms-of-use/">*</a>
+            🚨 FLASH SALE ENDS TONIGHT! 🚨 Use Code: <a href="/#svcountdowncode">GONEBYMIDNIGHT</a> for 50% OFF ⏳ Ends <a href="/#svcountdown">in 8h 51m 51s</a><a href="/terms-of-use/">*</a>
         </div> 
     </div>
     <div class="hidden lg:flex">
         <div class="w-auto text transform translate-y-4" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
-            🚨 FLASH SALE ENDS TONIGHT! 🚨 Use Code: <a href="https://snackverse.com/#svcountdowncode">GONEBYMIDNIGHT</a> for 50% OFF ⏳ Ends <a href="https://snackverse.com/#svcountdown">in 8h 51m 51s</a><a href="https://snackverse.com/terms-of-use/">*</a>
+            🚨 FLASH SALE ENDS TONIGHT! 🚨 Use Code: <a href="/#svcountdowncode">GONEBYMIDNIGHT</a> for 50% OFF ⏳ Ends <a href="/#svcountdown">in 8h 51m 51s</a><a href="/terms-of-use/">*</a>
         </div> 
     </div>
 </div>
@@ -284,19 +284,19 @@ color: #4b4354 !important;
 
             <div class="transform absolute max-w-380 left-14 xs:left-10 top-24 xs:top-14 xl:top-14 scale-50 md:left-20 md:scale-60 lg:scale-80 xl:scale-100 lg:rotate-0 rotate-12 transform -translate-x-36 -translate-y-24 lg:translate-y-10 lg:-translate-x-16 xl:translate-x-0 xl:translate-y-20 w-full">
         <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/pic1.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/pic1.webp" type="image/webp">
             <img src="/page_files/pic1.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -4, &quot;x&quot;: -10, &quot;y&quot;:-20, &quot;smoothness&quot;: 30}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
         </picture>
     </div>
             <div class="transform absolute max-w-280 left-1/2 top-16 lg:top-20 scale-30 md:scale-50 -rotate-12 lg:rotate-0 lg:scale-70 lg:-translate-y-10 xl:scale-100 -translate-x-1/2 w-full">
         <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/pic2.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/pic2.webp" type="image/webp">
             <img src="/page_files/pic2.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 4, &quot;y&quot;: 20, &quot;smoothness&quot;:10}" style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.01deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.01deg) scaleX(1) scaleY(1) scaleZ(1); ">
         </picture>
     </div>
             <div class="transform absolute max-w-410 top-5 right-12 xs:right-20 xs:-top-4 lg:top-auto lg:bottom-0 scale-50 md:scale-60 md:right-32 rotate-12 lg:rotate-0 lg:scale-70 lg:translate-y-10 lg:translate-x-32 xl:scale-100 md:-top-10 lg:top-auto w-full translate-x-1/2 xl:translate-x-14 xl:-translate-y-6 z-10">
         <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/pic3.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/pic3.webp" type="image/webp">
             <img src="/page_files/pic3.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 20, &quot;y&quot;: 20, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); ">
         </picture>
     </div>
@@ -304,25 +304,25 @@ color: #4b4354 !important;
 
 
 
-    <div class="bg-bgpurple w-full py-20 lg:py-24 lg:pt-32 bg-full bg-center bg-no-repeat mt-16 lg:mt-24 relative bg-contain fixbgposition fade-trigger" style="background-image:url(https://snackverse.com/wp-content/themes/shopkeeper/images/bg_bars.png);">
+    <div class="bg-bgpurple w-full py-20 lg:py-24 lg:pt-32 bg-full bg-center bg-no-repeat mt-16 lg:mt-24 relative bg-contain fixbgposition fade-trigger" style="background-image:url(/images/bg_bars.png);">
     <div class="flex flex-col md:flex-row text-white mx-auto max-w-90 md:max-w-md md:px-6 lg:px-0 xl:max-w-xl relative w-full flex-wrap">
                     <div class="transform absolute max-w-320 w-full -top-40 -left-32 xl:-top-36 xl:left-0 transform -translate-y-10 scale-60 lg:scale-90 xl:-translate-y-20 xl:-translate-x-10">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/stellar.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/stellar.webp" type="image/webp">
                 <img src="/page_files/stellar.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;:-20, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="transform absolute max-w-220 lg:max-w-400 top-0 right-0 translate-x-20 -translate-y-14 sm:-translate-y-16 lg:-translate-y-20 transform xl:-translate-y-24 xl:-translate-x-10">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/meteor.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/meteor.webp" type="image/webp">
                 <img src="/page_files/meteor.png" alt="Picture" class="js-parallax" data-parallax="{&quot;x&quot;: -100, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
         <div class="flex flex-col w-full md:w-1/3 justify-center md:justify-between lg:justify-center items-center text-center pb-10 lg:pb-0 md:px-2 xl:px-0">
                             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/shipping.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/shipping.webp" type="image/webp">
                 <img src="/page_files/shipping.png" alt="Picture" class="max-w-140 lg:max-180 xl:max-w-200 fadeIn" style="pointer-events: none; transform: translate(0px, 0px); opacity: 1;">
             </picture>
             <div class="relative mt-4 h-auto"><em class="font-bold text-24 lg:text-32 xl:text-40 fadeIn block" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">Free Shipping</em></div>
@@ -331,7 +331,7 @@ color: #4b4354 !important;
 
         <div class="flex flex-col w-full md:w-1/3 justify-center items-center text-center pb-10 lg:pb-0 md:px-2 xl:px-0">
                             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/commitment.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/commitment.webp" type="image/webp">
                 <img src="/page_files/commitment.png" alt="Picture" class="max-w-140 lg:max-180 xl:max-w-200 fadeIn w-full transform translate-x-2 translate-fix" style="pointer-events: none; transform: translate(8px, 0px); opacity: 1;">
             </picture>
             <div class="relative mt-4 h-auto"><em class="font-bold text-24 lg:text-32 xl:text-40 fadeIn block" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">No Commitment</em></div>
@@ -339,7 +339,7 @@ color: #4b4354 !important;
         </div>
         <div class="flex flex-col w-full md:w-1/3 justify-center items-center text-center pb-10 lg:pb-0 md:px-2 xl:px-0">
                             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/satisfaction.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/satisfaction.webp" type="image/webp">
                 <img src="/page_files/satisfaction.png" alt="Picture" class="max-w-140 lg:max-180 xl:max-w-200 fadeIn w-full" style="pointer-events: none; transform: translate(0px, 0px); opacity: 1;">
             </picture>
             <div class="relative mt-4 h-auto"><em class="font-bold text-24 lg:text-32 xl:text-40 fadeIn block" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">100% Satisfaction</em></div>
@@ -359,7 +359,7 @@ color: #4b4354 !important;
         <div class="flex flex-col text-center w-full md:w-1/3 h-auto">
                             <div class="relative flex flex-col">
                 <picture>
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/step1_.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/step1_.webp" type="image/webp">
                     <img src="/page_files/step1_.png" alt="Picture" class="max-w-full xl:max-w-400 mx-auto transform fadeIn transform -translate-x-7 md:-translate-x-4" style="pointer-events: none; transform: translate(-16px, 0px); opacity: 1;">
                 </picture>
             </div>
@@ -370,7 +370,7 @@ color: #4b4354 !important;
         <div class="flex flex-col text-center w-full md:w-1/3 h-auto">
                             <div class="relative flex flex-col">
                 <picture>
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/step2_.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/step2_.webp" type="image/webp">
                     <img src="/page_files/step2_.png" alt="Picture" class="max-w-full xl:max-w-400 mx-auto transform fadeIn transform -translate-x-7 md:-translate-x-4" style="pointer-events: none; transform: translate(-16px, 0px); opacity: 1;">
                 </picture>
             </div>
@@ -380,8 +380,8 @@ color: #4b4354 !important;
         <div class="flex flex-col text-center w-full md:w-1/3 h-auto">
                                             <div class="relative flex flex-col">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/step3_.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/step3_mobile.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/step3_.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/step3_mobile.webp" type="image/webp">
                     <img src="/page_files/step3_.png" alt="Picture" class="max-w-full xl:max-w-400 mx-auto transform fadeIn transform -translate-x-3 md:-translate-x-2" style="pointer-events: none; transform: translate(-8px, 0px); opacity: 1;">
                 </picture>
             </div>
@@ -407,14 +407,14 @@ color: #4b4354 !important;
     <div class="flex flex-col relative mx-auto max-w-90 xl:max-w-xl">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-x-0 relative">
                             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_bg.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/radial_bg.webp" type="image/webp">
                 <img src="/page_files/radial_bg.png" alt="Picture" class="max-w-400 w-full md:max-w-500 absolute left-40 -top-10 transform mx-auto">
             </picture>
 
              <div class="flex flex-col gap-y-8 order-1 lg:order-2 z-10 relative fadeIn md:hidden" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
                                     <div class="max-w-400 w-full md:max-w-700 transform scale-125 md:scale-100 md:scale-110 -translate-x-0 xl:translate-x-10 mx-auto">
                     <picture>
-                        <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_inside.webp" type="image/webp">
+                        <source media="(min-width: 300px)" srcset="/images/box_inside.webp" type="image/webp">
                         <img src="/page_files/box_inside.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -2, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
                     </picture>
                 </div>
@@ -455,7 +455,7 @@ color: #4b4354 !important;
             <div class="flex flex-col gap-y-8 order-1 lg:order-2 z-10 relative fadeIn hidden md:flex" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
                                     <div class="max-w-400 w-full md:max-w-700 transform scale-125 md:scale-100 md:scale-110 -translate-x-0 xl:translate-x-10 mx-auto">
                     <picture>
-                        <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/box_inside.webp" type="image/webp">
+                        <source media="(min-width: 300px)" srcset="/images/box_inside.webp" type="image/webp">
                         <img src="/page_files/box_inside.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -2, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
                     </picture>
                 </div>
@@ -464,18 +464,18 @@ color: #4b4354 !important;
 
 
         <div class="flex flex-row justify-center fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
-            <a href="https://snackverse.com/subscribe" class="w-full max-w-450 md:max-w-auto text-center justify-center px-14 rounded-full bg-orange text-white px-6 md:px-10 py-4 text-white inline-flex mt-14 lg:mt-20 xl:mt-20 mb-8 md:mb-14 lg:mb-28 font-bold transition duration-300 ease-in-out hover:bg-darkorange text-20 md:text-24 lg:text-28 2xl:text-32 relative z-10 md:py-6 xl:py-6 xl:px-14 2xl:px-10 xl:max-w-500">Let's get started!</a>
+            <a href="/subscribe" class="w-full max-w-450 md:max-w-auto text-center justify-center px-14 rounded-full bg-orange text-white px-6 md:px-10 py-4 text-white inline-flex mt-14 lg:mt-20 xl:mt-20 mb-8 md:mb-14 lg:mb-28 font-bold transition duration-300 ease-in-out hover:bg-darkorange text-20 md:text-24 lg:text-28 2xl:text-32 relative z-10 md:py-6 xl:py-6 xl:px-14 2xl:px-10 xl:max-w-500">Let's get started!</a>
         </div>
                     <div class="hidden lg:inline-flex max-w-140 md:max-w-180 transform absolute -left-20 lg:-left-26 bottom-80 z-0">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/cake_1.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/cake_1.webp" type="image/webp">
                 <img src="/page_files/cake_1.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 50, &quot;x&quot;: -80, &quot;y&quot;:40, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="hidden lg:inline-flex max-w-140 md:max-w-250 transform absolute left-auto -right-20 md:right-auto md:-left-26 bottom-0 z-0 ">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/cake_2.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/cake_2.webp" type="image/webp">
                 <img src="/page_files/cake_2.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 100, &quot;x&quot;: -100, &quot;y&quot;:100, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -490,21 +490,21 @@ color: #4b4354 !important;
     <div class="relative max-w-90 w-full mx-auto lg:max-w-md">
                     <div class="max-w-50 md:max-w-100 transform absolute left-0 top-0 transform xl:-translate-y-10 xl:-translate-x-32">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/fb.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/fb.webp" type="image/webp">
                 <img src="/page_files/fb.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -20, &quot;scale&quot;: 0.76,&quot;y&quot;:40, &quot;smoothness&quot;: 10}" style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="max-w-40 md:max-w-80 transform absolute right-0 md:right-auto md:left-1/2 top-0 transform xl:translate-y-20 xl:translate-x-20">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/mail.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/mail.webp" type="image/webp">
                 <img src="/page_files/mail.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 30, &quot;scale&quot;: 0.7, &quot;x&quot;: 20, &quot;smoothness&quot;: 20}" style="transform:translate3d(0.019px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.019px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="max-w-50 md:max-w-80 transform absolute -right-10 md:right-0 top-20 md:top-1/3 md:top-0 transform xl:-translate-y-20 xl:translate-x-32">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/twitter.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/twitter.webp" type="image/webp">
                 <img src="/page_files/twitter.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 40, &quot;scale&quot;: 0.6, &quot;y&quot;: 20, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.039px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -522,15 +522,15 @@ color: #4b4354 !important;
             </div>
 
             <div class="flex flex-row w-full 2xs:w-auto my-10 lg:my-0 fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
-                <a href="https://snackverse.com/refer-a-friend/" class="rounded-full bg-lime text-white px-10 py-4 text-black inline-flex font-bold hover:text-white transition duration-300 ease-in-out hover:bg-orange text-20 w-full lg:w-auto text-center justify-center md:text-24 lg:text-28 2xl:text-32 md:px-16 md:py-6">Refer a friend</a>
+                <a href="/refer-a-friend/" class="rounded-full bg-lime text-white px-10 py-4 text-black inline-flex font-bold hover:text-white transition duration-300 ease-in-out hover:bg-orange text-20 w-full lg:w-auto text-center justify-center md:text-24 lg:text-28 2xl:text-32 md:px-16 md:py-6">Refer a friend</a>
 
             </div>
         </div>
     </div>
 
             <picture>
-        <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/people.webp" type="image/webp">
-        <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/people-640x200-c-default.webp" type="image/webp">
+        <source media="(min-width: 768px)" srcset="/images/people.webp" type="image/webp">
+        <source media="(min-width: 300px)" srcset="/images/people-640x200-c-default.webp" type="image/webp">
         <img src="/page_files/people.png" alt="Picture" class="max-w-full w-full lg:max-w-xl mx-auto">
     </picture>
 </div>    
@@ -539,12 +539,12 @@ color: #4b4354 !important;
 <style>
 
 .bg-trust_pilot { 
-        background-image:url(https://snackverse.com/wp-content/themes/shopkeeper/images/stripe.png); 
+        background-image:url(/images/stripe.png); 
         background-position: 0% 8%; background-size: 110% 20%;
     }
 @media only screen and (min-width: 768px) {
     .bg-trust_pilot { 
-        background-image:url(https://snackverse.com/wp-content/themes/shopkeeper/images/lines.png); 
+        background-image:url(/images/lines.png); 
         background-position: 0% 30%; background-size: 104% 30%;
     }
 }
@@ -559,7 +559,7 @@ color: #4b4354 !important;
 
                     <div class="max-w-100 -top-10 -right-14 sm:-right-28 sm:max-w-200 md:top-10 xmd:translate-x-32 md:translate-x-20 lg:max-w-250 mx-auto absolute lg:top-0 scale-90 xl:scale-100 lg:-right-40 lg:translate-x-16 xl:-right-60 xl:translate-x-20 2xl:translate-x-20 transform z-10">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/spaceship.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/spaceship.webp" type="image/webp">
                 <img src="/page_files/spaceship.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -10, &quot;rotateX&quot;:30, &quot;x&quot;:20, &quot;smoothness&quot;: 30}" style="transform:translate3d(0.029px, 0px, 0px) rotateX(0.029deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0px, 0px) rotateX(0.029deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -567,7 +567,7 @@ color: #4b4354 !important;
         
                     <div class="max-w-200 w-full sm:max-w-250 lg:max-w-300 absolute -top-20 -right-32 md:top-10 md:translate-x-20  xmd:translate-x-32 lg:top-0 lg:translate-x-20 lg:-right-40 xl:-right-60 2xl:right-42 2xl:top-8 transform mx-auto">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_bg.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/radial_bg.webp" type="image/webp">
                 <img src="/page_files/radial_bg.png" alt="Picture" class="js-parallax" data-parallax="{&quot;scale&quot;: 0.8, &quot;rotate&quot;: 10, &quot;x&quot;: 20, &quot;smoothness&quot;: 40}" style="transform:translate3d(0.039px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.039px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -1344,32 +1344,32 @@ color: #4b4354 !important;
     <div class="max-w-90 xl:max-w-xl relative flex flex-col mx-auto">
 
                     <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_white.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/radial_white.webp" type="image/webp">
             <img src="/page_files/radial_white.png" alt="Picture" class="max-w-400 w-full md:max-w-600 absolute -top-20 -left-40 md:-top-20 md:-left-80 xl:translate-x-10 transform mx-auto z-0">
         </picture>
 
                     <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/radial_bg.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/radial_bg.webp" type="image/webp">
             <img src="/page_files/radial_bg.png" alt="Picture" class="max-w-400  max-w-200 w-full md:max-w-600 absolute -bottom-20 -right-40 md:bottom-auto md:top-20 md:-right-1/3 transform mx-auto z-0">
         </picture>
 
                     <div class="hidden lg:inline-block max-w-200 w-full md:max-w-220 absolute top-32 xl:left-10 transform -translate-y-1/2 mx-auto z-10 lg:scale-90 2xl:scale-100">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/candy_green.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/candy_green.webp" type="image/webp">
                 <img src="/page_files/candy_green.png" alt="Picture" data-parallax="{&quot;rotateZ&quot;: 100, &quot;scale&quot;: 1, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.039deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="hidden lg:inline-block max-w-200 w-full md:max-w-320 absolute top-1/2 -left-14 lg:-translate-x-10 xl:-translate-x-10 transform -translate-y-1/2 mx-auto lg:scale-90 2xl:scale-100">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/cookie.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/cookie.webp" type="image/webp">
                 <img src="/page_files/cookie.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -10, &quot;y&quot;:20, &quot;x&quot;: 20, &quot;smoothness&quot;: 10}" style="transform:translate3d(0.01px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.01px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
 
                     <div class="hidden lg:inline-block max-w-200 w-full md:max-w-400 absolute -bottom-20 -left-52 transform  mx-auto lg:scale-90 2xl:scale-100 lg:translate-x-16 xl:translate-x-24">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/soda.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/soda.webp" type="image/webp">
                 <img src="/page_files/soda.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 20, &quot;x&quot;: -10, &quot;smoothness&quot;: 14}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.014deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.014deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -1377,7 +1377,7 @@ color: #4b4354 !important;
 
                     <div class="hidden lg:inline-block max-w-140 w-full md:max-w-140 absolute top-18 right-10 xl:right-20 transform  mx-auto lg:scale-90 2xl:scale-100">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/gum.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/gum.webp" type="image/webp">
                 <img src="/page_files/gum.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 100}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -1385,7 +1385,7 @@ color: #4b4354 !important;
 
                     <div class="hidden lg:inline-block max-w-200 w-full md:max-w-400 w-full absolute top-1/2 -right-1/3 lg:-right-60 transform -translate-x-20 xl:-translate-x-32 -translate-y-1/2 mx-auto lg:scale-90 2xl:scale-100">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/gummy.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/gummy.webp" type="image/webp">
                 <img src="/page_files/gummy.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 12, &quot;x&quot;: 0, &quot;y&quot;: 20, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.019deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -1393,7 +1393,7 @@ color: #4b4354 !important;
 
                     <div class="hidden lg:inline-block max-w-200 w-full md:max-w-320 absolute -bottom-20 -right-20 transform mx-auto lg:scale-90 2xl:scale-100">
             <picture>
-                <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/chip.webp" type="image/webp">
+                <source media="(min-width: 300px)" srcset="/images/chip.webp" type="image/webp">
                 <img src="/page_files/chip.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: -30, &quot;scale&quot;: 0.8, &quot;x&quot;:-20, &quot;smoothness&quot;: 40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
             </picture>
         </div>
@@ -1431,7 +1431,7 @@ color: #4b4354 !important;
                         </div>
                         <div class="accordion-content">
                             <div class="text-14 pb-6 px-6 pt-2 md:pt-0">
-                                It’s pretty simple, just press the “<a href="https://snackverse.com/subscribe/">join now</a>” button on our site, then select what kind of payment plan suits you and provide all the necessary details. We will then take over the process of feeding you the best tasting snacks from around the world. 
+                                It’s pretty simple, just press the “<a href="/subscribe/">join now</a>” button on our site, then select what kind of payment plan suits you and provide all the necessary details. We will then take over the process of feeding you the best tasting snacks from around the world. 
                             </div>
                         </div>
                     </div>
@@ -1446,7 +1446,7 @@ color: #4b4354 !important;
                         </div>
                         <div class="accordion-content">
                             <div class="text-14 pb-6 px-6 pt-2 md:pt-0">
-                                You can expect to receive snacks from sweets to crisps to biscuits to chocolates and a lot more. We include all types of snacks and only pack the best and most delicious snacks from around the world! You can get an idea of the snacks we send by checking out our <a href="https://snackverse.com/our-previous-boxes/">previous month’s box</a>. 
+                                You can expect to receive snacks from sweets to crisps to biscuits to chocolates and a lot more. We include all types of snacks and only pack the best and most delicious snacks from around the world! You can get an idea of the snacks we send by checking out our <a href="/our-previous-boxes/">previous month’s box</a>. 
                             </div>
                         </div>
                     </div>
@@ -1484,7 +1484,7 @@ color: #4b4354 !important;
             
 
             <div class="pt-6 flex flex-col relative z-10 fadeIn lg:pb-6" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
-                <a href="https://snackverse.com/faqs" class="flex flex-col rounded-full text-white px-10 py-4 xl:py-6 border-purple border-2 text-purple font-bold transition duration-300 ease-in-out hover:bg-purple hover:text-white text-20 md:text-28 lg:text-32 lg:py-6 text-center">Read all questions</a>
+                <a href="/faqs" class="flex flex-col rounded-full text-white px-10 py-4 xl:py-6 border-purple border-2 text-purple font-bold transition duration-300 ease-in-out hover:bg-purple hover:text-white text-20 md:text-28 lg:text-32 lg:py-6 text-center">Read all questions</a>
             </div>
         </div>
     </div>
@@ -1498,21 +1498,21 @@ color: #4b4354 !important;
 
 
                     <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/planet1.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/planet1.webp" type="image/webp">
             <img src="/page_files/planet1.png" alt="Picture" class="absolute -right-20 -top-32 max-w-140 transform rotate-180 lg:max-w-300 lg:rotate-0 lg:top-auto lg:bottom-0 lg:-right-40 xl:-right-40">
         </picture>
 
                     <picture>
-            <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/planet2.webp" type="image/webp">
+            <source media="(min-width: 300px)" srcset="/images/planet2.webp" type="image/webp">
             <img src="/page_files/planet2.png" alt="Picture" class="absolute -right-24 -bottom-20 max-w-200 transform lg:right-auto lg:left-40 lg:bottom-auto lg:-top-1/2 lg:-translate-y-20 transform lg:max-w-900">
         </picture>
         
         <div class="w-full lg:w-1/2 order-2 lg:order-1 mt-10 lg:mt-0 fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
                             <div class="w-full mx-auto transform -translate-x-14 lg:translate-x-0 max-w-600 lg:max-w-auto">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/astro.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/astro-600x0-c-default.webp" type="image/webp">
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/astro.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="/images/astro.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/astro-600x0-c-default.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/astro.webp" type="image/webp">
                     <img src="/page_files/astro.png" alt="Picture" class="js-parallax" data-parallax="{&quot;rotateZ&quot;: 3, &quot;y&quot;: 60, &quot;smoothness&quot;: 60}" style="transform:translate3d(0px, 0.059px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.059deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.059px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.059deg) scaleX(1) scaleY(1) scaleZ(1); ">
                 </picture>
             </div>
@@ -1522,7 +1522,7 @@ color: #4b4354 !important;
         <div class="w-full lg:w-1/2 font-bold lg:pt-10 order-1 lg:order-2 relative z-10 lg:px-10 xl:px-0 lg:pb-4 xl:max-w-550">
             <div class="relative overflow-hidden"><em class="text-30 lg:text-40 xl:text-45 2xl:text-50 text-orange fadeIn block" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">Order Your Box Now</em></div>
             <div class="relative overflow-hidden"><p class="text-white text-20 lg:text-26 2xl:text-32 leading-140 mt-2 fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">&amp; try out-of-this-world snacks from around the globe!</p></div>
-            <div class="fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;"><a href="https://snackverse.com/subscribe" class="rounded-full bg-orange text-white px-10 py-4 text-20 xl:px-32 inline-flex font-bold transition duration-300 ease-in-out hover:bg-darkorange lg:text-24 xl:text-32 mt-6 xl:mt-10 w-full justify-center xl:w-auto lg:py-5 2xl:py-6 lg:px-10 sm:max-w-600 lg:max-w-350 xl:max-w-900">Join now</a></div>
+            <div class="fadeIn" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;"><a href="/subscribe" class="rounded-full bg-orange text-white px-10 py-4 text-20 xl:px-32 inline-flex font-bold transition duration-300 ease-in-out hover:bg-darkorange lg:text-24 xl:text-32 mt-6 xl:mt-10 w-full justify-center xl:w-auto lg:py-5 2xl:py-6 lg:px-10 sm:max-w-600 lg:max-w-350 xl:max-w-900">Join now</a></div>
         </div>
     </div>
 </div>
@@ -1561,9 +1561,9 @@ color: #4b4354 !important;
     <footer class="bg-purple pt-20 pb-14 xl:pt-26 xl:pb-20 text-center md:text-left fade-trigger" style="background-color:#4D008A;">
     <div class="flex flex-row max-w-90 w-full xl:max-w-xl justify-center items-center mx-auto">
         <div class="mx-auto w-auto">
-                            <a href="https://snackverse.com/" class="fadeIn inline-flex" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
+                            <a href="/" class="fadeIn inline-flex" style="pointer-events: auto; transform: translate(0px, 0px); opacity: 1;">
                 <picture>
-                    <source media="(min-width: 300px)" srcset="https://snackverse.com/wp-content/themes/shopkeeper/images/logo.webp" type="image/webp">
+                    <source media="(min-width: 300px)" srcset="/images/logo.webp" type="image/webp">
                     <img src="/page_files/logo.png" class="logo max-w-100 md:max-w-200" alt="Picture">
                 </picture>
             </a>
@@ -1574,9 +1574,9 @@ color: #4b4354 !important;
             <strong style="color:#944ACE;" class="block">Our Company</strong>
 
             <div class="flex flex-col gap-y-2 text-white text-14 lg:text-16 mt-4">
-                <div><a href="https://snackverse.com/terms-of-use/" class="inline-flex ">Terms of Use</a></div>
-                <div><a href="https://snackverse.com/privacy-policy/" class="inline-flex">Privacy Policy</a></div>
-                <div><a href="https://snackverse.com/collaborate/" class="inline-flex">Collaborate With Us</a></div>
+                <div><a href="/terms-of-use/" class="inline-flex ">Terms of Use</a></div>
+                <div><a href="/privacy-policy/" class="inline-flex">Privacy Policy</a></div>
+                <div><a href="/collaborate/" class="inline-flex">Collaborate With Us</a></div>
             </div>
         </div>
 
@@ -1584,11 +1584,11 @@ color: #4b4354 !important;
             <strong style="color:#944ACE;" class="block">Shop</strong>
 
             <div class="flex flex-col gap-y-2 text-white text-14 lg:text-16 mt-4">
-                <div><a href="https://snackverse.com/subscribe/" class="inline-flex">Subscribe</a></div>
-                <div><a href="https://snackverse.com/gift/" class="inline-flex">Give A Gift</a></div>
-                <div><a href="https://snackverse.com/refer-a-friend/" class="inline-flex">Refer A Friend</a></div>
-                <div><a href="https://snackverse.com/our-previous-boxes/" class="inline-flex">Our Previous Boxes</a></div>
-                <div><a href="https://snackverse.com/corporate/" class="inline-flex">Corporate Order</a></div>
+                <div><a href="/subscribe/" class="inline-flex">Subscribe</a></div>
+                <div><a href="/gift/" class="inline-flex">Give A Gift</a></div>
+                <div><a href="/refer-a-friend/" class="inline-flex">Refer A Friend</a></div>
+                <div><a href="/our-previous-boxes/" class="inline-flex">Our Previous Boxes</a></div>
+                <div><a href="/corporate/" class="inline-flex">Corporate Order</a></div>
             </div>
         </div>
 
@@ -1596,11 +1596,11 @@ color: #4b4354 !important;
             <strong style="color:#944ACE;" class="block">Customer Service</strong>
 
             <div class="flex flex-col gap-y-2 text-white text-14 lg:text-16 mt-4">
-                <div><a href="https://snackverse.com/faqs/" class="inline-flex">F.A.Q.s</a></div>
-                <div><a href="https://snackverse.com/contact-us/" class="inline-flex">Contact Us</a></div>
-                <div><a href="https://snackverse.com/my-account/" class="inline-flex">My Account</a></div>
-                <div><a href="https://snackverse.com/order-tracking/" class="inline-flex">Order Tracking</a></div>
-                <div><a href="https://snackverse.com/my-account/lost-password/" class="inline-flex">Lost Password</a></div>
+                <div><a href="/faqs/" class="inline-flex">F.A.Q.s</a></div>
+                <div><a href="/contact-us/" class="inline-flex">Contact Us</a></div>
+                <div><a href="/my-account/" class="inline-flex">My Account</a></div>
+                <div><a href="/order-tracking/" class="inline-flex">Order Tracking</a></div>
+                <div><a href="/my-account/lost-password/" class="inline-flex">Lost Password</a></div>
             </div>
         </div>
 

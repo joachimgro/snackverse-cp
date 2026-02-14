@@ -23,7 +23,7 @@ export default function SubscribePage() {
           dangerouslySetInnerHTML={{
             __html: `
               .bg {
-                background-image: url('/wp-content/themes/shopkeeper/images/bang_bg.png');
+                background-image: url('/images/bang_bg.png');
                 background-color: #560299;
                 background-size: cover;
                 background-position: center;
@@ -39,8 +39,6 @@ export default function SubscribePage() {
           <div className="flex flex-col flex-wrap md:flex-row mx-auto max-w-90 md:max-w-md md:px-6 lg:px-0 lg:max-w-xl w-full lg:gap-x-4 relative mt-6 lg:mt-0">
             <div
               style={{
-                marginLeft: 0,
-                marginBottom: "3rem",
               }}
               className="ml-20 flex flex-col items-center md:items-start justify-start relative overflow-hidden mt-8 mb-4 md:mb-10 md:mt-4 lg:mt-10 w-fill"
             >
