@@ -9,8 +9,8 @@ interface SubscriptionBoxProps {
 
 export default function SubscriptionBox({ box }: SubscriptionBoxProps) {
   return (
-    <div
-      className={`fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_${box.index}`}
+    <div style={{zIndex: 0}}
+      className={`relative fadeIn w-full max-w-400 mx-auto md:mx-0 lg:max-w-full lg:w-1/3 px-2 lg:px-4 lg:h-full lg:flex lg:flex-col lg:flex-1 group box_${box.index}`}
     >
       {/* Sun decoration – desktop */}
       {/* eslint-disable-next-line @next/next/no-img-element */}

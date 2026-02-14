@@ -101,7 +101,7 @@ export const boxes: SubscriptionBoxData[] = [
 
     badgeImage: `${IMG}/best_seller.svg`,
     badgeClass:
-      "max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:-rotate-2 transition duration-500",
+      "max-w-150 absolute left-1/2 transform -translate-x-1/4 -translate-y-5 z-30 group-hover:-rotate-2 transition duration-500",
 
     title: "Original Box",
     description: "The perfect amount of snacks",
@@ -130,7 +130,7 @@ export const boxes: SubscriptionBoxData[] = [
 
     sunDesktopImage: `${IMG}/sun--lightorange.png`,
     sunDesktopClass:
-      "hidden lg:block max-w-600 absolute right-10 lg:right-14 xl:right-10 top-0 transform -translate-y-1/3 translate-x-1/3 lg:scale-95 xl:scale-125",
+      "premium-box hidden lg:block max-w-600 absolute right-10 lg:right-14 xl:right-10 top-0 transform -translate-y-1/4 translate-x-1/4 lg:scale-95 xl:scale-125",
 
     sunMobileImage: `${IMG}/sun_darker_orange_mobile.png`,
     sunMobileClass:
@@ -140,7 +140,7 @@ export const boxes: SubscriptionBoxData[] = [
 
     badgeImage: `${IMG}/best_value.svg`,
     badgeClass:
-      "max-w-150 absolute left-1/2 transform -translate-x-1/2 -translate-y-10 z-30 group-hover:rotate-2 transition duration-500",
+      "max-w-150 absolute left-1/2 transform -translate-x-1/4 -translate-y-5 z-30 group-hover:rotate-2 transition duration-500",
 
     title: "Premium Box",
     description: "The ultimate snacking experience!",

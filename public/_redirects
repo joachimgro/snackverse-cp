@@ -1,0 +1,2 @@
+# Redirect old /public/fonts/* requests to /fonts/* (static export has no server rewrites)
+/public/fonts/*  /fonts/:splat  302

@@ -6,7 +6,7 @@
   "compatibility_date": "2026-02-09",
   
   // Pages configuration
-  "pages_build_output_dir": ".vercel/output/static",
+  "pages_build_output_dir": "out",
   
   // Node.js compatibility for Next.js
   "compatibility_flags": [
