@@ -132,34 +132,7 @@ export default function PreviousBoxItem({ box, index }: PreviousBoxItemProps) {
 
         {/* SVG Path */}
         {isEven ? (
-          <svg className="absolute hidden lg:block top-0 left-1/2 pointer-events-none z-20 overflow-visible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 661 748" width="50%" height="100%" preserveAspectRatio="none" style={{ minHeight: "100%", transform: "scaleY(-1)" }}>
-            <defs>
-              <mask id={`pathMask${index + 1}`}>
-                <path
-                  ref={maskPathRef}
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="3"
-                  strokeDasharray="2400"
-                  strokeDashoffset="-2400"
-                  style={{ transition: "stroke-dashoffset 1.5s ease-out" }}
-                  d="M4.32179 1C-6.67785 74 18.768 172.5 137.822 172.5c148.817 0 521-152.0559 521 211 0 347.326-349.947 239.005-479 236C29.5 616 11 687 2 747.5"
-                />
-              </mask>
-            </defs>
-            <path
-              ref={pathRef}
-              className="previous_boxes_thumb--path"
-              stroke="#B65BFF"
-              strokeDasharray="6,6"
-              strokeLinecap="round"
-              strokeWidth="3"
-              mask={`url(#pathMask${index + 1})`}
-              d="M4.32179 1C-6.67785 74 18.768 172.5 137.822 172.5c148.817 0 521-152.0559 521 211 0 347.326-349.947 239.005-479 236C29.5 616 11 687 2 747.5"
-            />
-          </svg>
-        ) : (
-          <svg className="absolute hidden lg:block top-0 right-1/2 pointer-events-none z-20 overflow-visible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 661 748" width="50%" height="100%" preserveAspectRatio="none" style={{ minHeight: "100%", transform: "scaleX(-1)", right: "calc(50% - 0.67%)" }}>
+          <svg className="absolute hidden lg:block top-0 left-1/2 pointer-events-none z-20 overflow-visible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 661 748" width="50%" height="100%" preserveAspectRatio="none" style={{ minHeight: "100%", transform: "scaleY(-1) scaleX(-1) translateX(0) rotate(-0.4deg)" }}>
             <defs>
               <mask id={`pathMask${index + 1}`}>
                 <path
@@ -170,7 +143,7 @@ export default function PreviousBoxItem({ box, index }: PreviousBoxItemProps) {
                   strokeDasharray="2400"
                   strokeDashoffset="2400"
                   style={{ transition: "stroke-dashoffset 1.5s ease-out" }}
-                  d="M4.32179 1C-6.67785 74 18.768 172.5 137.822 172.5c148.817 0 521-152.0559 521 211 0 347.326-349.947 239.005-479 236C29.5 616 11 687 2 747.5"
+                  d="M656.5 747.5c11-73-14.446-171.5-133.5-171.5C374.183 576 1.99988 728.056 2 365c.00012-347.3257 349.947-239.005 479-236 150.322 3.5 168.822-67.5 177.822-128"
                 />
               </mask>
             </defs>
@@ -182,7 +155,34 @@ export default function PreviousBoxItem({ box, index }: PreviousBoxItemProps) {
               strokeLinecap="round"
               strokeWidth="3"
               mask={`url(#pathMask${index + 1})`}
-              d="M4.32179 1C-6.67785 74 18.768 172.5 137.822 172.5c148.817 0 521-152.0559 521 211 0 347.326-349.947 239.005-479 236C29.5 616 11 687 2 747.5"
+              d="M656.5 747.5c11-73-14.446-171.5-133.5-171.5C374.183 576 1.99988 728.056 2 365c.00012-347.3257 349.947-239.005 479-236 150.322 3.5 168.822-67.5 177.822-128"
+            />
+          </svg>
+        ) : (
+          <svg className="absolute hidden lg:block top-0 right-1/2 pointer-events-none z-20 overflow-visible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 661 748" width="50%" height="100%" preserveAspectRatio="none" style={{ minHeight: "100%", transform: "scaleX(1) translateX(-2.4px) rotate(0)", right: "calc(50% - 0.67%)" }}>
+            <defs>
+              <mask id={`pathMask${index + 1}`}>
+                <path
+                  ref={maskPathRef}
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="3"
+                  strokeDasharray="2400"
+                  strokeDashoffset="-2400"
+                  style={{ transition: "stroke-dashoffset 1.5s ease-out" }}
+                  d="M656.5 747.5c11-73-14.446-171.5-133.5-171.5C374.183 576 1.99988 728.056 2 365c.00012-347.3257 349.947-239.005 479-236 150.322 3.5 168.822-67.5 177.822-128"
+                />
+              </mask>
+            </defs>
+            <path
+              ref={pathRef}
+              className="previous_boxes_thumb--path"
+              stroke="#B65BFF"
+              strokeDasharray="6,6"
+              strokeLinecap="round"
+              strokeWidth="3"
+              mask={`url(#pathMask${index + 1})`}
+              d="M656.5 747.5c11-73-14.446-171.5-133.5-171.5C374.183 576 1.99988 728.056 2 365c.00012-347.3257 349.947-239.005 479-236 150.322 3.5 168.822-67.5 177.822-128"
             />
           </svg>
         )}
