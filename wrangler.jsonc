@@ -1,17 +1,20 @@
 {
-  // Project name for Cloudflare Pages
   "name": "snackverse-cp",
-  
-  // Compatibility date for Cloudflare Workers runtime
   "compatibility_date": "2026-02-09",
-  
-  // Pages configuration
-  "pages_build_output_dir": "out",
-  
-  // Environment variables (add as needed)
-  "vars": {
-    // "API_URL": "https://api.example.com"
-  },
-  
 
+  // Worker entry point
+  "main": "worker/index.ts",
+
+  // Serve the Next.js static export as assets
+  "assets": {
+    "directory": "out",
+    "binding": "ASSETS"
+  },
+
+  // Environment variables
+  "vars": {
+    // Set this to your WordPress origin hostname or IP.
+    // Must NOT route back through this Worker (use a grey-cloud DNS record or raw IP).
+    "ORIGIN_HOST": "snackverse5.fixed-staging.co.uk"
+  }
 }

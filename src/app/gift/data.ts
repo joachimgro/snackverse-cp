@@ -35,7 +35,7 @@ export const boxes: SubscriptionBoxData[] = [
       { text: "Shipping is free for addresses in the United Kingdom", included: true },
     ],
     price: "7.99",
-    url: "/product/gift-the-mini-box/",
+    url: "/product/the-mini-gift-box/",
     sku: "gift-mini-box-monthly",
   },
   {
@@ -72,7 +72,7 @@ export const boxes: SubscriptionBoxData[] = [
       { text: "Shipping is free for addresses in the United Kingdom", included: true },
     ],
     price: "13.99",
-    url: "/product/gift-the-original-box/",
+    url: "/product/the-original-gift-box/",
     sku: "gift-original-box-monthly",
   },
   {
@@ -109,7 +109,7 @@ export const boxes: SubscriptionBoxData[] = [
       { text: "Shipping is free for addresses in the United Kingdom", included: true },
     ],
     price: "23.99",
-    url: "/product/gift-the-premium-box/",
+    url: "product/the-premium-gift-box/",
     sku: "gift-premium-box-monthly",
   },
 ];

@@ -1,73 +1,56 @@
-# Deploy to Cloudflare Pages
+# Deploy to Cloudflare Workers
 
-This project is configured for **static export** and can be deployed to Cloudflare Pages.
+This project is deployed as a **Cloudflare Worker with static assets**. The Worker serves `/`, `/gift`, and `/subscribe` from the Next.js static export, and proxies all other requests to the WordPress origin server.
 
 ## Prerequisites
 
 - Node.js 18+
-- Git repository (e.g. GitHub) for the project
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) (`npm install -g wrangler`)
+- Cloudflare account with Workers enabled
 
-## Build locally
+## Build & Deploy
 
 ```bash
 npm install
-npm run build
+npm run build          # produces static site in out/
+npx wrangler deploy    # deploys Worker + static assets
 ```
 
-The static site is generated in the **`out`** directory.
+Log in first if needed: `wrangler login`
 
----
+## Configuration
 
-## Option A: Cloudflare Dashboard (Git integration)
+### `wrangler.jsonc`
 
-1. Push your code to **GitHub** (or GitLab / Bitbucket).
+| Field | Purpose |
+|---|---|
+| `main` | Worker entry point (`worker/index.ts`) |
+| `assets.directory` | Static files from Next.js export (`out/`) |
+| `vars.ORIGIN_HOST` | Hostname of the WordPress origin server |
 
-2. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
+### Origin hostname (`ORIGIN_HOST`)
 
-3. Select your repository and choose **Begin setup**.
+Set this to the hostname or IP of your WordPress server. **Important**: it must NOT route back through this Worker, or you will get an infinite loop. Options:
 
-4. Use these **Build configuration** settings:
+- Use the server's **IP address** directly (e.g. `123.45.67.89`)
+- Create a **grey-cloud** (DNS-only, not proxied) record like `origin.snackverse.com` pointing to the server IP
 
-   | Setting            | Value              |
-   |--------------------|--------------------|
-   | **Framework preset** | Next.js (Static HTML Export) |
-   | **Production branch** | `main` (or your default branch) |
-   | **Build command**    | `npm run build` or `npx next build` |
-   | **Build output directory** | `out` |
+You can override `ORIGIN_HOST` per-environment in the Cloudflare dashboard under **Workers & Pages → your worker → Settings → Variables**.
 
-5. Click **Save and Deploy**. Cloudflare will build and deploy your site and give you a `*.pages.dev` URL.
+## Routing logic
 
-6. Future pushes to the production branch will trigger automatic deployments.
+The Worker (`worker/index.ts`) handles requests as follows:
 
----
+| Request path | Action |
+|---|---|
+| `/`, `/gift`, `/subscribe` | Served from static assets |
+| `/_next/*`, `/fonts/*` | Served from static assets (shared resources) |
+| Everything else | Proxied to `ORIGIN_HOST` (WordPress) |
 
-## Option B: Deploy from CLI (Wrangler)
+## Adding new pages
 
-1. Install Wrangler (if needed):
+To serve an additional page from the Worker instead of proxying to WordPress:
 
-   ```bash
-   npm install -g wrangler
-   ```
-
-2. Build the project:
-
-   ```bash
-   npm run build
-   ```
-
-3. Deploy the `out` folder to Cloudflare Pages:
-
-   ```bash
-   wrangler pages deploy out --project-name=snackverse-cp
-   ```
-
-   (Use the same project name as in `wrangler.jsonc` if you already created the project in the dashboard.)
-
-4. Log in when prompted (`wrangler login`) if you haven’t already.
-
----
-
-## Notes
-
-- **Static export**: The app uses `output: 'export'` in `next.config.ts`, so there are no server-side rewrites at runtime. The `public/_redirects` file is used to redirect `/public/fonts/*` to `/fonts/*` on Cloudflare.
-- **Environment variables**: If you need env vars (e.g. for a future API), set them in the Cloudflare Pages project settings (Settings → Environment variables).
+1. Create the page in `src/app/` as usual
+2. Add the path to the `SERVED_PAGES` set in `worker/index.ts`
+3. Rebuild and redeploy
