@@ -24,17 +24,17 @@ export const previousBoxes: PreviousBox[] = [
       {
         title: "2nd Best",
         text: "Fried Noodle Chips",
-        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie.png",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
         title: "Strangest",
         text: "Durian & Cheese",
-        image: "",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
-        title: "",
-        text: "",
-        image: "",
+        title: "Strangest",
+        text: "Durian & Cheese",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
     ],
   },{
@@ -47,17 +47,17 @@ export const previousBoxes: PreviousBox[] = [
       {
         title: "2nd Best",
         text: "Fried Noodle Chips",
-        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie.png",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
         title: "Strangest",
         text: "Durian & Cheese",
-        image: "",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
-        title: "",
-        text: "",
-        image: "",
+        title: "Strangest",
+        text: "Durian & Cheese",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
     ],
   },{
@@ -70,17 +70,17 @@ export const previousBoxes: PreviousBox[] = [
       {
         title: "2nd Best",
         text: "Fried Noodle Chips",
-        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie.png",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
         title: "Strangest",
         text: "Durian & Cheese",
-        image: "",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
-        title: "",
-        text: "",
-        image: "",
+        title: "Strangest",
+        text: "Durian & Cheese",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
     ],
   },
@@ -94,17 +94,17 @@ export const previousBoxes: PreviousBox[] = [
       {
         title: "2nd Best",
         text: "Fried Noodle \nChips",
-        image: "",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
         title: "Strangest",
         text: "Durian & \nCheese",
-        image: "",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
       {
-        title: "",
-        text: "",
-        image: "",
+        title: "Strangest",
+        text: "Durian & Cheese",
+        image: "https://staging.snackverse.com/wp-content/uploads/2024/06/cookie-80x0-c-default.webp",
       },
     ],
   },

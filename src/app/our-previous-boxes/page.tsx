@@ -59,7 +59,6 @@ export default function PreviousBoxesPage() {
           }
 
           .previous_boxes_thumb--path {
-            stroke-dasharray: 2400;
             stroke-dashoffset: 2400;
             transition: stroke-dashoffset 1.5s ease-out;
           }
@@ -82,6 +81,84 @@ export default function PreviousBoxesPage() {
 
           .bg-purplevariant1 {
             background-color: #9b4dff;
+          }
+
+          .box-spec-bubble:before {
+            content: "";
+            border: 3px solid #6abfda;
+            width: 100%;
+            z-index: 2;
+            border-radius: 30px;
+            height: 100%;
+            transition: all .5s ease-in-out;
+            transform: skewY(2.61deg);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+          }
+
+          .box-spec-bubble:after {
+            content: "";
+            border: 3px solid #aaebff;
+            width: 100%;
+            border-radius: 30px;
+            z-index: 1;
+            height: 100%;
+            transition: all .5s ease-in-out;
+            transform: skewY(-4deg);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+          }
+
+          .box-spec-bubble > * {
+            position: relative;
+            z-index: 3;
+          }
+
+          .box-spec-bubble-1:before {
+            border-color: #ff8c23;
+          }
+
+          .box-spec-bubble-1:after {
+            border-color: #fdcca7;
+          }
+
+          .box-spec-bubble-2:before {
+            border-color: #fa6868;
+          }
+
+          .box-spec-bubble-2:after {
+            border-color: #ffa4a4;
+          }
+
+          .spec_title {
+            font-weight: bold;
+          }
+
+          .spec_title-0 {
+            color: #6abfda;
+          }
+
+          .spec_title-1 {
+            color: #ff8c23;
+          }
+
+          .spec_title-2 {
+            color: #fa6868;
+          }
+
+          .spec_text {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal;
+            height: 40px;
+            display: flex;
+            align-items: center;
           }
 
           .bg-purplevariant1:hover {

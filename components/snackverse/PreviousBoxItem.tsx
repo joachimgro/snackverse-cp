@@ -85,11 +85,11 @@ export default function PreviousBoxItem({ box, index }: PreviousBoxItemProps) {
               </div>
 
               {/* Specs */}
-              <div className="flex w-full flex-col gap-x-4 md:grid md:grid-cols-3 mt-2 md:mt-8 relative overflow-hidden py-2">
+              <div className="flex w-full flex-col gap-x-4 md:grid md:grid-cols-3 mt-2 md:mt-8 relative overflow-visible py-2">
                 {box.specs.map((spec, i) => (
-                  <div key={i} className="flex flex-row md:flex-col text-center items-center fadeIn box-spec-bubble py-2 md:py-8 md:px-3 bg-transparent md:max-w-160 h-full relative">
+                  <div key={i} className={`flex flex-row md:flex-col text-center items-center fadeIn box-spec-bubble box-spec-bubble-${i} py-2 md:py-8 md:px-3 bg-transparent md:max-w-160 h-full relative`}>
                     <div className="flex flex-col flex-1">
-                      {spec.title && <span className="font-bold spec_title order-2 md:order-1 hidden md:flex text-center w-full mx-auto flex flex-col">{spec.title}</span>}
+                      {spec.title && <span className={`font-bold spec_title spec_title-${i} order-2 md:order-1 hidden md:flex text-center w-full mx-auto flex flex-col`}>{spec.title}</span>}
                       <div className="h-full flex flex-col justify-center items-center order-1 md:order-2 image_wrapper relative md:h-auto">
                         {spec.image && (
                           <picture>
@@ -100,8 +100,7 @@ export default function PreviousBoxItem({ box, index }: PreviousBoxItemProps) {
                       </div>
                     </div>
                     <div className="flex flex-col order-2 w-full text-left px-6 md:px-0 md:text-center relative md:mt-auto">
-                      {spec.title && <span className="font-bold spec_title text-20 md:hidden">{spec.title}</span>}
-                      {spec.text && <span className="text-16 leading-120 spec_text text-darkgrey font-medium whitespace-pre-line">{spec.text}</span>}
+                      {spec.text && <span className="spec_text leading-120 whitespace-pre-line">{spec.text}</span>}
                     </div>
                   </div>
                 ))}
